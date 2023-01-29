@@ -1,0 +1,83 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-01-29 16:57+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: templates/base.html:83
+msgid "News"
+msgstr ""
+
+#: templates/base.html:86
+msgid "Documents"
+msgstr ""
+
+#: templates/base.html:88
+msgid "Principles of Organisation"
+msgstr ""
+
+#: templates/base.html:89
+msgid "Manifesto"
+msgstr ""
+
+#: templates/base.html:94
+msgid "Positions"
+msgstr ""
+
+#: templates/base.html:96
+msgid "On the war in Ukraine"
+msgstr ""
+
+#: templates/base.html:97
+msgid "On the nature of the Soviet Union"
+msgstr ""
+
+#: templates/base.html:102
+msgid "Campaigns"
+msgstr ""
+
+#: templates/base.html:104
+msgid "Wildberries"
+msgstr ""
+
+#: templates/base.html:105
+msgid "The forest of Troitsk"
+msgstr ""
+
+#: templates/base.html:106
+msgid "Social cooperation"
+msgstr ""
+
+#: templates/base.html:111
+msgid "Courses"
+msgstr ""
+
+#: templates/base.html:113
+msgid "Introduction into Marxism"
+msgstr ""
+
+#: templates/base.html:114
+msgid "Information security"
+msgstr ""
+
+#: templates/base.html:117
+msgid "Structure"
+msgstr ""
+
+#: templates/base.html:118
+msgid "Join"
+msgstr ""
+

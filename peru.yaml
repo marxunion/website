@@ -1,12 +1,11 @@
 imports:
     # The dircolors file just goes at the root of our project.
-    elegant: themes/elegant/
+    plugins|i18n_subsites: plugins/
     plugins|sitemap: plugins/
     plugins|yuicompressor: plugins/
     plugins|better_figures_and_images: plugins/
     plugins|better_codeblock_line_numbering: plugins/
     plugins|extract_toc: plugins/
-    plugins|tipue_search: plugins/
     plugins|liquid_tags: plugins/
     plugins|neighbors: plugins/
     plugins|render_math: plugins/
@@ -19,16 +18,14 @@ imports:
     revealmd: plugins/revealmd/
 
 
-
-git module elegant:
-    url: https://github.com/Pelican-Elegant/elegant.git
-    rev: next
-
 git module revealmd:
     url: https://github.com/iranzo/pelican-revealmd/
 
 git module plugins:
     url: https://github.com/getpelican/pelican-plugins.git
+
+rule i18n_subsites:
+    pick: i18n_subsites
 
 rule sitemap:
     pick: sitemap

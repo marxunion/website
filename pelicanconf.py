@@ -6,34 +6,23 @@ import datetime
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
 
-AUTHOR = "A blog-o-matic user"
-AUTHORS = {
-    "Pablo Iranzo Gómez": {
-        "blurb": """ opensource enthusiast and Lego fan doing some python simple programs like @redken_bot in telegram, etc""",
-        "url": "https://iranzo.github.io",
-        "avatar": "https://avatars.githubusercontent.com/u/312463",
-    },
-}
-SITENAME = "My personal blog with blog-o-matic"
+SITENAME = "My personal news with news-o-matic"
 SITESUBTITLE = "This is where I do test things"
 SITEURL = "/"
-DEFAULT_LANG = "en"
-DEFAULT_CATEGORY = "blog"
-CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
-CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
+DEFAULT_LANG = "ru"
 
 
 LANDING_PAGE_ABOUT = {
-    "title": "My blog",
+    "title": "My news",
     "details": """<p>This website contains Info that might be interesting for you, enjoy!</p>""",
 }
 
 
 PROJECTS = [
     {
-        "name": "Blog-o-matic",
-        "url": "https://github.com/iranzo/blog-o-matic",
-        "description": "Canned blog automation for quickly setting up a blog with Pelican",
+        "name": "news-o-matic",
+        "url": "https://github.com/iranzo/news-o-matic",
+        "description": "Canned news automation for quickly setting up a news with Pelican",
     },
     {
         "name": "Citellus",
@@ -41,7 +30,7 @@ PROJECTS = [
         "description": "Troubleshooting automation tool with easy to contribute rules",
     },
     {
-        "name": "Pablo Iranzo Blog",
+        "name": "Pablo Iranzo news",
         "url": "https://iranzo.github.io",
         "description": "Other projects at Github website",
     },
@@ -65,19 +54,6 @@ SOCIAL = (
     ("github", "http://github.com/iranzo"),
     ("linkedin", "https://www.linkedin.com/in/iranzo/"),
 )
-
-
-# TWITTER_USERNAME = "fillit"
-# Update if you use amazon links
-AMAZON_ONELINK = "23824450-ef77-4537-9259-8590465886f1"
-
-# GOOGLE_ANALYTICS tracking ID
-# GOOGLE_ANALYTICS = "UA-81705-12"
-
-# Configure if you use Disqus for comments
-# DISQUS_SITENAME = "iranzo-github-io"
-# DISQUS_DISPLAY_COUNTS = True
-
 
 # Extra files customization
 EXTRA_PATH_METADATA = {}
@@ -108,7 +84,7 @@ PHOTO_EXIF_COPYRIGHT = "COPYRIGHT"
 
 PATH = "content"
 
-TIMEZONE = "Europe/Madrid"
+TIMEZONE = "Europe/Moscow"
 
 # Put as draft content in the future
 WITH_FUTURE_DATES = True
@@ -117,7 +93,6 @@ WITH_FUTURE_DATES = True
 RSS_FEED_SUMMARY_ONLY = False
 
 # Feed generation is usually not desired when developing
-
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 FEED_ALL_RSS = "feeds/all.rss"
 
@@ -130,7 +105,7 @@ AUTHOR_FEED_RSS = "feeds/{slug}.rss"
 TAG_FEED_ATOM = "feeds/tag_{slug}.atom.xml"
 TAG_FEED_RSS = "feeds/tag_{slug}.rss"
 
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 
 CACHE_CONTENT = False
 CACHE_PATH = ".cache"
@@ -140,9 +115,9 @@ LOAD_CONTENT_CACHE = False
 PLUGIN_PATHS = ["plugins"]
 
 PLUGINS = [
+    "i18n_subsites",
     "sitemap",
     "extract_toc",
-    "tipue_search",
     "liquid_tags.img",
     "neighbors",
     "render_math",
@@ -158,7 +133,21 @@ PLUGINS = [
 # 'better_codeblock_line_numbering'
 # 'better_figures_and_images'
 
-THEME = "themes/elegant"
+THEME = "theme"
+
+# Localization
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+I18N_TEMPLATES_LANG = 'en'
+# mapping: language_code -> settings_overrides_dict
+I18N_SUBSITES = {
+    'ru': {
+        'SITENAME': 'Союз Марксистов',
+        },
+    'en': {
+        'SITENAME': 'Marxunion',
+        'TIMEZONE': 'Europe/London',
+        }
+    }
 
 # elegant
 TYPOGRIFY = True
@@ -190,38 +179,26 @@ USE_FOLDER_AS_CATEGORY = False
 SEARCH_BOX = False
 
 # URL Settings to be compatible with octopress
-ARTICLE_URL = "blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
-ARTICLE_SAVE_AS = "blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
+ARTICLE_URL = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
+ARTICLE_SAVE_AS = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
 
-ARTICLE_LANG_URL = "blog/{date:%Y}/{date:%m}/{date:%d}/{slug}-{lang}/"
-ARTICLE_LANG_SAVE_AS = "blog/{date:%Y}/{date:%m}/{date:%d}/{slug}-{lang}/index.html"
+ARTICLE_LANG_URL = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}-{lang}/"
+ARTICLE_LANG_SAVE_AS = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}-{lang}/index.html"
 
-YEAR_ARCHIVE_URL = "blog/archive/{date:%Y}/"
-YEAR_ARCHIVE_SAVE_AS = "blog/archive/{date:%Y}/index.html"
+YEAR_ARCHIVE_URL = "news/archive/{date:%Y}/"
+YEAR_ARCHIVE_SAVE_AS = "news/archive/{date:%Y}/index.html"
 
-MONTH_ARCHIVE_URL = "blog/archive/{date:%Y}/{date:%m}/"
-MONTH_ARCHIVE_SAVE_AS = "blog/archive/{date:%Y}/{date:%m}/index.html"
+MONTH_ARCHIVE_URL = "news/archive/{date:%Y}/{date:%m}/"
+MONTH_ARCHIVE_SAVE_AS = "news/archive/{date:%Y}/{date:%m}/index.html"
 
-CATEGORY_URL = "blog/category/{slug}/"
-CATEGORY_SAVE_AS = "blog/category/{slug}/index.html"
+CATEGORY_URL = "news/category/{slug}/"
+CATEGORY_SAVE_AS = "news/category/{slug}/index.html"
 
-TAG_URL = "blog/tag/{slug}/"
-TAG_SAVE_AS = "blog/tag/{slug}/index.html"
+TAG_URL = "news/tag/{slug}/"
+TAG_SAVE_AS = "news/tag/{slug}/index.html"
 
 PAGE_URL = "{slug}/"
 PAGE_SAVE_AS = "{slug}/index.html"
-
-AUTHOR_SAVE_AS = ""
-AUTHORS_SAVE_AS = ""
-
-ARCHIVES_URL = "blog/archives/"
-ARCHIVES_SAVE_AS = "blog/archives/index.html"
-
-CATEGORIES_URL = "blog/categories/"
-CATEGORIES_SAVE_AS = "blog/categories/index.html"
-
-TAGS_URL = "blog/tags/"
-TAGS_SAVE_AS = "blog/tags/index.html"
 
 TAGS_URL = "tags"
 TAGS_SAVE_AS = "tags/index.html"

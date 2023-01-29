@@ -12,3 +12,5 @@ Pillow
 pysvg
 typogrify
 webassets
+babel
+jinja2

@@ -11,11 +11,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-# SITEURL = 'https://YOURUSERNAME.github.io/'
-
-SITEURL = "/"
+SITEURL = 'https://marxunion.github.io/'
 RELATIVE_URLS = False
-
 DELETE_OUTPUT_DIRECTORY = False
-
 WITH_FUTURE_DATES = False
