@@ -58,7 +58,6 @@ SOCIAL = (
 
 # Extra files customization
 EXTRA_PATH_METADATA = {}
-STATIC_PATHS = ["images"]
 
 # Photo Gallery plugin
 PHOTO_LIBRARY = "gallery-source/"
@@ -79,6 +78,12 @@ PHOTO_EXIF_COPYRIGHT = "COPYRIGHT"
 # ---------------------------------------------------------------------
 
 PATH = "content"
+STATIC_PATHS = ['content/posts', 'content/pages']
+STATIC_EXCLUDES = ['plugins', 'theme']
+PAGE_EXCLUDES = STATIC_EXCLUDES
+ARTICLE_EXCLUDES = STATIC_EXCLUDES
+ARTICLE_PATHS = ['content/posts']
+PAGE_PATHS = ['content/pages']
 
 TIMEZONE = "Europe/Moscow"
 
@@ -120,7 +125,7 @@ PLUGINS = [
     "related_posts",
     "share_post",
     "series",
-    "assets",
+    # "assets",
     "post_stats",
     "photos",
 ]
@@ -137,10 +142,13 @@ I18N_TEMPLATES_LANG = 'en'
 I18N_SUBSITES = {
     'ru': {
         'SITENAME': 'Союз Марксистов',
+        'SITEURL': '/',
+        'OUTPUT_PATH': 'output'
         },
     'en': {
         'SITENAME': 'Marxunion',
         'TIMEZONE': 'Europe/London',
+        'OUTPUT_PATH': 'output/en'
         }
     }
 

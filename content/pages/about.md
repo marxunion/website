@@ -1,4 +1,5 @@
 title: About
+lang: en
 layout: post
 date: 2016-06-02 17:27:47 +0200
 comments: true

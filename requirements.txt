@@ -4,7 +4,7 @@ cssmin
 cssutils
 flake8
 ghp-import
-markdown
+markdown<3.2
 pelican
 peru
 Piexif
