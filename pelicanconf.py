@@ -8,6 +8,7 @@ import datetime
 
 SITENAME = "My personal news with news-o-matic"
 SITESUBTITLE = "This is where I do test things"
+AUTHOR = "Marxunion"
 SITEURL = "/"
 DEFAULT_LANG = "ru"
 
@@ -57,11 +58,6 @@ SOCIAL = (
 
 # Extra files customization
 EXTRA_PATH_METADATA = {}
-
-EXTRA_TEMPLATES_PATHS = [
-    "plugins/revealmd/templates",  # eg: "plugins/revealmd/templates"
-]
-
 STATIC_PATHS = ["images"]
 
 # Photo Gallery plugin
@@ -126,7 +122,6 @@ PLUGINS = [
     "series",
     "assets",
     "post_stats",
-    "revealmd",
     "photos",
 ]
 
