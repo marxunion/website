@@ -6,7 +6,9 @@ import datetime
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
 
-AUTHOR = "Marxunion"
+SITENAME = "Союз Марксистов"
+SITESUBTITLE = ""
+AUTHOR = SITENAME
 SITEURL = "/"
 DEFAULT_LANG = "ru"
 
@@ -141,9 +143,6 @@ I18N_TEMPLATES_LANG = 'en'
 # mapping: language_code -> settings_overrides_dict
 I18N_SUBSITES = {
     'ru': {
-        'SITENAME': 'Союз Марксистов',
-        'SITESUBTITLE': '',
-        'SITEURL': '/',
         'OUTPUT_PATH': 'output'
         },
     'en': {
