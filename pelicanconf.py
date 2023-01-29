@@ -6,8 +6,6 @@ import datetime
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
 
-SITENAME = "My personal news with news-o-matic"
-SITESUBTITLE = "This is where I do test things"
 AUTHOR = "Marxunion"
 SITEURL = "/"
 DEFAULT_LANG = "ru"
@@ -19,6 +17,7 @@ LANDING_PAGE_ABOUT = {
 }
 
 
+"""
 PROJECTS = [
     {
         "name": "news-o-matic",
@@ -47,6 +46,7 @@ LINKS = (
     ("Redken on telegram", "https://t.me/redken_bot"),
     ("RHJobs channel on TG", "https://t.me/rhjobs"),
 )
+"""
 
 # Keep 'name' like 'twitter' with what 'FontAwesome has for putting the right icon'
 
@@ -142,11 +142,13 @@ I18N_TEMPLATES_LANG = 'en'
 I18N_SUBSITES = {
     'ru': {
         'SITENAME': 'Союз Марксистов',
+        'SITESUBTITLE': '',
         'SITEURL': '/',
         'OUTPUT_PATH': 'output'
         },
     'en': {
         'SITENAME': 'Marxunion',
+        'SITESUBTITLE': '',
         'TIMEZONE': 'Europe/London',
         'OUTPUT_PATH': 'output/en'
         }
