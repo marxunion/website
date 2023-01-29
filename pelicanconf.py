@@ -79,7 +79,6 @@ PHOTO_EXIF_COPYRIGHT = "COPYRIGHT"
 # ONLY TOUCH IF YOU KNOW WHAT YOU'RE DOING!
 # ---------------------------------------------------------------------
 
-PATH = "content"
 STATIC_PATHS = ['content/posts', 'content/pages']
 STATIC_EXCLUDES = ['plugins', 'theme']
 PAGE_EXCLUDES = STATIC_EXCLUDES
