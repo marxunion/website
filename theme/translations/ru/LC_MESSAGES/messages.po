@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-01-29 16:57+0100\n"
+"POT-Creation-Date: 2023-05-27 17:56+0200\n"
 "PO-Revision-Date: 2023-01-29 16:59+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,67 +19,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
 
-#: templates/base.html:83
+#: templates/base.html:25
 msgid "News"
 msgstr "Новости"
 
-#: templates/base.html:86
+#: templates/base.html:26
 msgid "Documents"
 msgstr "Документы"
 
-#: templates/base.html:88
-msgid "Principles of Organisation"
-msgstr "Организационные принципы"
-
-#: templates/base.html:89
-msgid "Manifesto"
-msgstr "Манифест"
-
-#: templates/base.html:94
+#: templates/base.html:27
 msgid "Positions"
 msgstr "Позиции"
 
-#: templates/base.html:96
-msgid "On the war in Ukraine"
-msgstr "По войне в Украине"
-
-#: templates/base.html:97
-msgid "On the nature of the Soviet Union"
-msgstr "По природе Советского Союза"
-
-#: templates/base.html:102
+#: templates/base.html:28
 msgid "Campaigns"
 msgstr "Кампании"
 
-#: templates/base.html:104
-msgid "Wildberries"
-msgstr ""
-
-#: templates/base.html:105
-msgid "The forest of Troitsk"
-msgstr "Троицкий лес"
-
-#: templates/base.html:106
-msgid "Social cooperation"
-msgstr "Соцкооп"
-
-#: templates/base.html:111
+#: templates/base.html:29
 msgid "Courses"
 msgstr "Курсы"
 
-#: templates/base.html:113
-msgid "Introduction into Marxism"
-msgstr "Введение в марксизм"
-
-#: templates/base.html:114
-msgid "Information security"
-msgstr "Информационная безопасность"
-
-#: templates/base.html:117
-msgid "Structure"
-msgstr "Структура"
-
-#: templates/base.html:118
+#: templates/base.html:30
 msgid "Join"
 msgstr "Присоединиться"
+
+#: templates/base.html:35
+msgid "Search"
+msgstr ""
+
+#: templates/translations.html:3
+msgid "Translations"
+msgstr ""
+
+#~ msgid "Principles of Organisation"
+#~ msgstr "Организационные принципы"
+
+#~ msgid "Manifesto"
+#~ msgstr "Манифест"
+
+#~ msgid "On the war in Ukraine"
+#~ msgstr "По войне в Украине"
+
+#~ msgid "On the nature of the Soviet Union"
+#~ msgstr "По природе Советского Союза"
+
+#~ msgid "Wildberries"
+#~ msgstr ""
+
+#~ msgid "The forest of Troitsk"
+#~ msgstr "Троицкий лес"
+
+#~ msgid "Social cooperation"
+#~ msgstr "Соцкооп"
+
+#~ msgid "Introduction into Marxism"
+#~ msgstr "Введение в марксизм"
+
+#~ msgid "Information security"
+#~ msgstr "Информационная безопасность"
+
+#~ msgid "Structure"
+#~ msgstr "Структура"
 

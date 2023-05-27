@@ -6,57 +6,17 @@ import datetime
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
 
-SITENAME = "Союз Марксистов"
+SITENAME = "Союз марксистов"
 SITESUBTITLE = ""
 AUTHOR = SITENAME
-SITEURL = "/"
+SITEURL = ""
 DEFAULT_LANG = "ru"
-
+DEFAULT_DATE = "fs"
 
 LANDING_PAGE_ABOUT = {
     "title": "My news",
     "details": """<p>This website contains Info that might be interesting for you, enjoy!</p>""",
 }
-
-
-"""
-PROJECTS = [
-    {
-        "name": "news-o-matic",
-        "url": "https://github.com/iranzo/news-o-matic",
-        "description": "Canned news automation for quickly setting up a news with Pelican",
-    },
-    {
-        "name": "Citellus",
-        "url": "https://citellus.org",
-        "description": "Troubleshooting automation tool with easy to contribute rules",
-    },
-    {
-        "name": "Pablo Iranzo news",
-        "url": "https://iranzo.github.io",
-        "description": "Other projects at Github website",
-    },
-    {
-        "name": "Redken Telegram BOT",
-        "url": "https://t.me/redken_bot",
-        "description": "A Telegram bot with support for Karma, RSS Feeds, Quotes, etc",
-    },
-]
-
-
-LINKS = (
-    ("Redken on telegram", "https://t.me/redken_bot"),
-    ("RHJobs channel on TG", "https://t.me/rhjobs"),
-)
-"""
-
-# Keep 'name' like 'twitter' with what 'FontAwesome has for putting the right icon'
-
-SOCIAL = (
-    ("Twitter", "http://twitter.com/iranzop"),
-    ("github", "http://github.com/iranzo"),
-    ("linkedin", "https://www.linkedin.com/in/iranzo/"),
-)
 
 # Extra files customization
 EXTRA_PATH_METADATA = {}
@@ -69,18 +29,21 @@ PHOTO_THUMB = (192, 144, 60)
 PHOTO_SQUARE_THUMB = False
 PHOTO_RESIZE_JOBS = 5
 PHOTO_WATERMARK = True
-PHOTO_WATERMARK_TEXT = "© Pablo Iranzo Gómez (https://iranzo.github.io)"
+PHOTO_WATERMARK_TEXT = SITENAME
 PHOTO_WATERMARK_IMG = ""
 PHOTO_EXIF_KEEP = False
 PHOTO_EXIF_REMOVE_GPS = True
-PHOTO_EXIF_COPYRIGHT = "COPYRIGHT"
-# PHOTO_EXIF_COPYRIGHT_AUTHOR = 'Your Name Here' (Defaults to Author)
+PHOTO_EXIF_COPYRIGHT = "CREATIVE COMMONS"
 
 # ONLY TOUCH IF YOU KNOW WHAT YOU'RE DOING!
 # ---------------------------------------------------------------------
 
+PATH = 'content'
 STATIC_PATHS = ['content/posts', 'content/pages']
-STATIC_EXCLUDES = ['plugins', 'theme']
+ARTICLE_PATHS = ['content/posts']
+PAGE_PATHS = ['content/pages']
+
+STATIC_EXCLUDES = ['plugins', 'theme', 'output']
 PAGE_EXCLUDES = STATIC_EXCLUDES
 ARTICLE_EXCLUDES = STATIC_EXCLUDES
 
@@ -166,13 +129,7 @@ MARKDOWN = {
     "output_format": "html5",
 }
 
-DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "search", "404")
-
-# Elegant Labels
-SOCIAL_PROFILE_LABEL = "Stay in Touch"
-RELATED_POSTS_LABEL = "Keep Reading"
-SHARE_POST_INTRO = "Like this post? Share on:"
-COMMENTS_INTRO = ""
+DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "404")
 
 FILENAME_METADATA = r"(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)"
 USE_FOLDER_AS_CATEGORY = False
@@ -181,43 +138,42 @@ SEARCH_BOX = False
 
 # URL Settings to be compatible with octopress
 ARTICLE_URL = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
-ARTICLE_SAVE_AS = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
+ARTICLE_SAVE_AS = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}.html"
 
 ARTICLE_LANG_URL = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}-{lang}/"
-ARTICLE_LANG_SAVE_AS = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}-{lang}/index.html"
+ARTICLE_LANG_SAVE_AS = "news/{date:%Y}/{date:%m}/{date:%d}/{slug}-{lang}.html"
 
 YEAR_ARCHIVE_URL = "news/archive/{date:%Y}/"
-YEAR_ARCHIVE_SAVE_AS = "news/archive/{date:%Y}/index.html"
+YEAR_ARCHIVE_SAVE_AS = "news/archive/{date:%Y}.html"
 
 MONTH_ARCHIVE_URL = "news/archive/{date:%Y}/{date:%m}/"
-MONTH_ARCHIVE_SAVE_AS = "news/archive/{date:%Y}/{date:%m}/index.html"
+MONTH_ARCHIVE_SAVE_AS = "news/archive/{date:%Y}/{date:%m}.html"
 
 CATEGORY_URL = "news/category/{slug}/"
-CATEGORY_SAVE_AS = "news/category/{slug}/index.html"
+CATEGORY_SAVE_AS = "news/category/{slug}.html"
 
 TAG_URL = "news/tag/{slug}/"
-TAG_SAVE_AS = "news/tag/{slug}/index.html"
+TAG_SAVE_AS = "news/tag/{slug}.html"
 
 PAGE_URL = "{slug}/"
-PAGE_SAVE_AS = "{slug}/index.html"
+PAGE_SAVE_AS = "{slug}.html"
 
 TAGS_URL = "tags"
-TAGS_SAVE_AS = "tags/index.html"
+TAGS_SAVE_AS = "tags.html"
 AUTHORS_URL = "authors"
-AUTHORS_SAVE_AS = "authors/index.html"
+AUTHORS_SAVE_AS = "authors.html"
 CATEGORIES_URL = "categories"
-CATEGORIES_SAVE_AS = "categories/index.html"
+CATEGORIES_SAVE_AS = "categories.html"
 ARCHIVES_URL = "archives"
-ARCHIVES_SAVE_AS = "archives/index.html"
+ARCHIVES_SAVE_AS = "archives.html"
 
 DEFAULT_PAGINATION = 5
 DEFAULT_ORPHANS = 0
 
 PAGINATION_PATTERNS = (
-    (1, "{base_name}/", "{base_name}/index.html"),
-    (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
+    (1, "{base_name}/", "{base_name}.html"),
+    (2, "{base_name}/page/{number}/", "{base_name}/page/{number}.html"),
 )
-
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
