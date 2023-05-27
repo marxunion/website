@@ -14,4 +14,3 @@ from pelicanconf import *
 SITEURL = 'https://marxunion.github.io/'
 RELATIVE_URLS = False
 DELETE_OUTPUT_DIRECTORY = False
-WITH_FUTURE_DATES = False
