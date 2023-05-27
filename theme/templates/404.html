@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base.html.bak' %}
 
 {% block title %}
 Page not found · {{ super() }}
@@ -7,6 +7,7 @@ Page not found · {{ super() }}
 {% block head_description %}
 Page does not exist at {{ SITENAME|striptags|e }} blog.
 {% endblock head_description %}
+
 {% block content %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
@@ -27,22 +28,4 @@ Page does not exist at {{ SITENAME|striptags|e }} blog.
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    // Get Current location as the initial search item
-    var newurl = (' ' + window.location.pathname).slice(1);
-
-    // Replace "/" in path into spaces
-    var newurl = newurl.replace(/\//g, ' ');
-
-    // Remove html extension
-    var newurl = newurl.replace(/.html/g, ' ');
-
-    // Replace - by ' '
-    var newurl = newurl.replace(/\-/g, ' ');
-
-    // Fill search field with resulting string
-    document.getElementById('tipue_search_input_404').value = newurl;
-</script>
-
 {% endblock content %}
