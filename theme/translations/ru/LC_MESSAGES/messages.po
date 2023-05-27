@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-27 17:56+0200\n"
+"POT-Creation-Date: 2023-05-27 19:19+0200\n"
 "PO-Revision-Date: 2023-01-29 16:59+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -45,39 +45,9 @@ msgstr "Присоединиться"
 
 #: templates/base.html:35
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #: templates/translations.html:3
 msgid "Translations"
-msgstr ""
-
-#~ msgid "Principles of Organisation"
-#~ msgstr "Организационные принципы"
-
-#~ msgid "Manifesto"
-#~ msgstr "Манифест"
-
-#~ msgid "On the war in Ukraine"
-#~ msgstr "По войне в Украине"
-
-#~ msgid "On the nature of the Soviet Union"
-#~ msgstr "По природе Советского Союза"
-
-#~ msgid "Wildberries"
-#~ msgstr ""
-
-#~ msgid "The forest of Troitsk"
-#~ msgstr "Троицкий лес"
-
-#~ msgid "Social cooperation"
-#~ msgstr "Соцкооп"
-
-#~ msgid "Introduction into Marxism"
-#~ msgstr "Введение в марксизм"
-
-#~ msgid "Information security"
-#~ msgstr "Информационная безопасность"
-
-#~ msgid "Structure"
-#~ msgstr "Структура"
+msgstr "Переводы"
 
