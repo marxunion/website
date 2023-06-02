@@ -37,9 +37,9 @@
         </form>
     </div>
     <div class="languages">
-        <a href="{{ main_siteurl }}" style="pointer-events: none;">рус</a>
-        <a href="{{ main_siteurl }}/en">eng</a>
-        <a href="{{ main_siteurl }}/de">de</a>
+        <a href="{{ main_siteurl }}" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
+        <a href="{{ main_siteurl }}/en" {% if DEFAULT_LANG == 'en' %}style="pointer-events: none;"{% endif %}>eng</a>
+        <a href="{{ main_siteurl }}/de" {% if DEFAULT_LANG == 'de' %}style="pointer-events: none;"{% endif %}>de</a>
     </div>
 </header>
 

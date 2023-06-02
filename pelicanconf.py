@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 import datetime
 
+
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
 
@@ -83,20 +84,24 @@ JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 I18N_TEMPLATES_LANG = 'en'
 # mapping: language_code -> settings_overrides_dict
 I18N_SUBSITES = {
-    'ru': {
-        'OUTPUT_PATH': 'output'
-        },
     'en': {
         'SITENAME': 'Marxunion',
         'SITESUBTITLE': '',
         'TIMEZONE': 'Europe/London',
         'OUTPUT_PATH': 'output/en'
-        }
+    },
+    'de': {
+        'SITENAME': 'Marxunion',
+        'SITESUBTITLE': '',
+        'TIMEZONE': 'Europe/Berlin',
+        'OUTPUT_PATH': 'output/de'
     }
+}
 
 MARKDOWN = {
     "extension_configs": {
-        "markdown.extensions.codehilite": {"css_class": "highlight", "linenums": True},
+        "markdown.extensions.codehilite": {"css_class": "highlight",
+                                           "linenums": True},
         "markdown.extensions.extra": {},
         "markdown.extensions.toc": {"permalink": "true"},
         "markdown.extensions.meta": {},
@@ -112,7 +117,8 @@ RELATIVE_URLS = True
 SITEMAP = {
     "format": "xml",
     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+    "changefreqs": {"articles": "monthly", "indexes": "daily",
+                    "pages": "monthly"},
 }
 
 SITE_UPDATED = datetime.date.today()

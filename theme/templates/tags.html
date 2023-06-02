@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 
 {% block title %}
-All Tags · {{ super() }}
+{% trans %}All tags{% endtrans %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-All tags used in the {{ SITENAME|striptags|e }} blog.
+{% trans %}All tags used by{% endtrans %} {{ SITENAME|striptags|e }}.
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
 {{ super() }}
-<meta property="og:title" content="All Tags · {{ SITENAME|striptags|e }}"/>
-<meta name="twitter:title" content="All Tags · {{ SITENAME|striptags|e }}">
+<meta property="og:title" content="{% trans %}All tags{% endtrans %} · {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="{% trans %}All tags{% endtrans %} · {{ SITENAME|striptags|e }}">
 <meta property="og:url" content="{{ SITEURL }}/{{ TAGS_URL }}" />
-<meta property="og:description" content="All tags used in the {{ SITENAME|striptags|e }} blog" />
-<meta name="twitter:description" content="All tags used in the {{ SITENAME|striptags|e }} blog">
+<meta property="og:description" content="{% trans %}All tags used by{% endtrans %} {{ SITENAME|striptags|e }}" />
+<meta name="twitter:description" content="{% trans %}All tags used by{% endtrans %} {{ SITENAME|striptags|e }}">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}
