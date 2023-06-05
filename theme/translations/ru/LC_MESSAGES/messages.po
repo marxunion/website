@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-06-02 16:19+0200\n"
+"POT-Creation-Date: 2023-06-05 16:50+0200\n"
 "PO-Revision-Date: 2023-01-29 16:59+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -74,31 +74,31 @@ msgstr "Категория"
 msgid "Tags"
 msgstr "Теги"
 
-#: templates/base.html:25
+#: templates/base.html:35
 msgid "News"
 msgstr "Новости"
 
-#: templates/base.html:26
+#: templates/base.html:36
 msgid "Documents"
 msgstr "Документы"
 
-#: templates/base.html:27
+#: templates/base.html:37
 msgid "Positions"
 msgstr "Позиции"
 
-#: templates/base.html:28
+#: templates/base.html:38
 msgid "Campaigns"
 msgstr "Кампании"
 
-#: templates/base.html:29
+#: templates/base.html:39
 msgid "Courses"
 msgstr "Курсы"
 
-#: templates/base.html:30
+#: templates/base.html:40
 msgid "Join"
 msgstr "Присоединиться"
 
-#: templates/base.html:35
+#: templates/base.html:46 templates/base.html:51
 msgid "Search"
 msgstr "Поиск"
 
