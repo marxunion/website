@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 import datetime
-
 
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
@@ -15,18 +13,18 @@ DEFAULT_LANG = "ru"
 DEFAULT_DATE = "fs"
 
 # Photo Gallery plugin
-PHOTO_LIBRARY = "gallery-source/"
-PHOTO_GALLERY = (1024, 768, 80)
-PHOTO_ARTICLE = (760, 506, 80)
-PHOTO_THUMB = (192, 144, 60)
-PHOTO_SQUARE_THUMB = False
-PHOTO_RESIZE_JOBS = 5
-PHOTO_WATERMARK = True
-PHOTO_WATERMARK_TEXT = SITENAME
-PHOTO_WATERMARK_IMG = ""
-PHOTO_EXIF_KEEP = False
-PHOTO_EXIF_REMOVE_GPS = True
-PHOTO_EXIF_COPYRIGHT = "CREATIVE COMMONS"
+# PHOTO_LIBRARY = "gallery-source/"
+# PHOTO_GALLERY = (1024, 768, 80)
+# PHOTO_ARTICLE = (760, 506, 80)
+# PHOTO_THUMB = (192, 144, 60)
+# PHOTO_SQUARE_THUMB = False
+# PHOTO_RESIZE_JOBS = 5
+# PHOTO_WATERMARK = True
+# PHOTO_WATERMARK_TEXT = SITENAME
+# PHOTO_WATERMARK_IMG = ""
+# PHOTO_EXIF_KEEP = False
+# PHOTO_EXIF_REMOVE_GPS = True
+# PHOTO_EXIF_COPYRIGHT = "CREATIVE COMMONS"
 
 # ONLY TOUCH IF YOU KNOW WHAT YOU'RE DOING!
 # ---------------------------------------------------------------------
@@ -42,7 +40,6 @@ PAGE_PATHS = ['content/pages']
 STATIC_EXCLUDES = ['plugins', 'theme', 'output']
 PAGE_EXCLUDES = STATIC_EXCLUDES
 ARTICLE_EXCLUDES = STATIC_EXCLUDES
-
 THEME = "theme"
 
 TIMEZONE = "Europe/Moscow"
@@ -64,21 +61,10 @@ TAG_FEED_RSS = "feeds/tag_{slug}.rss"
 
 # Plugins
 PLUGIN_PATHS = ["plugins"]
-
 PLUGINS = [
     "i18n_subsites",
-    "sitemap",
     "extract_toc",
-    "liquid_tags.img",
-    "neighbors",
-    "render_math",
-    "related_posts",
-    "share_post",
-    "series",
-    # "assets",
-    "post_stats",
-    "photos",
-    "search"
+    "pelican.plugins.search"
 ]
 
 # Localization
@@ -114,14 +100,6 @@ MARKDOWN = {
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
-
-# sitemap
-SITEMAP = {
-    "format": "xml",
-    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-    "changefreqs": {"articles": "monthly", "indexes": "daily",
-                    "pages": "monthly"},
-}
 
 STORK_INPUT_OPTIONS = {
     "base_directory": OUTPUT_PATH,
