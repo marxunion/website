@@ -102,9 +102,9 @@ MARKDOWN = {
 RELATIVE_URLS = True
 
 STORK_INPUT_OPTIONS = {
-    "base_directory": OUTPUT_PATH,
-    "html_selector": "article",
-    "url_prefix": SITEURL
+    "base_directory": ".",
+    "url_prefix": SITEURL,
+    "stemming": "Russian"
 }
 
 SITE_UPDATED = datetime.date.today()
