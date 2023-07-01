@@ -2,6 +2,8 @@
 from __future__ import unicode_literals
 import datetime
 
+from pelican.plugins import search
+
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
 
@@ -64,7 +66,7 @@ PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "i18n_subsites",
     "extract_toc",
-    "pelican.plugins.search"
+    search
 ]
 
 # Localization
