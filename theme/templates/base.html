@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://files.stork-search.net/basic.css">
     <script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
-    <script src="/theme/script.js"></script>
+    <script src="/theme/js/menu.js"></script>
     <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
 </head>
 <body>
@@ -43,11 +43,20 @@
     </div>
     <div>
         <form class="search" action="#">
-            <input type="text" placeholder="{% trans %}Search{% endtrans %}" name="search">
+            <input data-stork="sitesearch" type="text" placeholder="{% trans %}Search{% endtrans %}" name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
-    <input data-stork="sitesearch" placeholder="{% trans %}Search{% endtrans %}">
+    <div class="search-box">
+        <input data-stork="sitesearch" type="text" placeholder="{% trans %}Search{% endtrans %}" name="search">
+        <div class="search-btn">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <script src="/theme/js/search.js"></script>
     <div data-stork="sitesearch-output"></div>
     <div class="languages">
         <a href="{{ main_siteurl }}" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
