@@ -1,3 +1,4 @@
+peru
 markdown<3.2
 typogrify
 babel

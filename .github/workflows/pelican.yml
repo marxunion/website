@@ -22,6 +22,12 @@ jobs:
 
     - uses: actions/cache@v3
       with:
+        path: ~/.cache/peru
+        key: ${{ runner.os }}-peru-${{ hashFiles('**/peru.yaml/*') }}
+        restore-keys: ${{ runner.os }}-peru-
+
+    - uses: actions/cache@v3
+      with:
         path: ~/stork
         key: ${{ runner.os }}-stork
         restore-keys: ${{ runner.os }}-stork
