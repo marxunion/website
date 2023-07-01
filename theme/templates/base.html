@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://files.stork-search.net/basic.css">
     <script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
     <script src="/theme/script.js"></script>
     <title>
@@ -47,33 +48,8 @@
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
-    <div class="search-box">
-        <input type="text" placeholder="{% trans %}Search{% endtrans %}" name="search">
-        <div class="search-btn">
-            <i class="fas fa-search"></i>
-        </div>
-        <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-        </div>
-    </div>
-    <script>
-        const searchBtn = document.querySelector(".search-btn");
-        const cancelBtn = document.querySelector(".cancel-btn");
-        const searchBox = document.querySelector(".search-box");
-        const searchInput = document.querySelector("input");
-        searchBtn.onclick = () => {
-            searchBox.classList.add("active");
-            searchInput.classList.add("active");
-            searchBtn.classList.add("active");
-            cancelBtn.classList.add("active");
-        }
-        cancelBtn.onclick = () => {
-            searchBox.classList.remove("active");
-            searchInput.classList.remove("active");
-            searchBtn.classList.remove("active");
-            cancelBtn.classList.remove("active");
-        }
-    </script>
+    <input data-stork="sitesearch" placeholder="{% trans %}Search{% endtrans %}">
+    <div data-stork="sitesearch-output"></div>
     <div class="languages">
         <a href="{{ main_siteurl }}" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
         <a href="{{ main_siteurl }}/en" {% if DEFAULT_LANG == 'en' %}style="pointer-events: none;"{% endif %}>eng</a>
@@ -95,5 +71,9 @@
     </div>
     <div class="footer-logo">{{ SITENAME }}</div>
 </footer>
+
+<script src="https://files.stork-search.net/releases/v1.5.0/stork.js"></script>
+<script>stork.register("sitesearch", "{{ SITEURL }}/search-index.st");</script>
+
 </body>
 </html>

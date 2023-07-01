@@ -32,6 +32,7 @@ PHOTO_EXIF_COPYRIGHT = "CREATIVE COMMONS"
 # ---------------------------------------------------------------------
 DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "404")
 INDEX_SAVE_AS = 'index.html'
+OUTPUT_PATH = 'output'
 
 PATH = "content"
 STATIC_PATHS = ['content/posts', 'content/pages']
@@ -77,6 +78,7 @@ PLUGINS = [
     # "assets",
     "post_stats",
     "photos",
+    "search"
 ]
 
 # Localization
@@ -119,6 +121,12 @@ SITEMAP = {
     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
     "changefreqs": {"articles": "monthly", "indexes": "daily",
                     "pages": "monthly"},
+}
+
+STORK_INPUT_OPTIONS = {
+    "base_directory": OUTPUT_PATH,
+    "html_selector": "article",
+    "url_prefix": SITEURL
 }
 
 SITE_UPDATED = datetime.date.today()

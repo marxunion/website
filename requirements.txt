@@ -6,6 +6,7 @@ flake8
 ghp-import
 markdown<3.2
 pelican
+pelican-search
 peru
 Piexif
 Pillow
