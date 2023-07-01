@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-RUN apt update && apt -y install wget python3 pandoc graphviz
+RUN apt update && apt -y install wget python3 python3-pip pandoc graphviz
 
 LABEL "com.github.actions.name"="Pelican for GitHub Pages"
 LABEL "com.github.actions.description"="Builds and deploys the Pelican project to GitHub Pages"
