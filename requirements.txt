@@ -5,4 +5,3 @@ babel
 jinja2
 beautifulsoup4
 pelican
-pelican-search

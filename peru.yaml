@@ -2,6 +2,7 @@ imports:
     # The dircolors file just goes at the root of our project.
     plugins|i18n_subsites: plugins/
     plugins|extract_toc: plugins/
+    search|search: plugins/
 
 
 git module plugins:
@@ -12,3 +13,9 @@ rule i18n_subsites:
 
 rule extract_toc:
     pick: extract_toc
+
+git module search:
+    url: https://github.com/pelican-plugins/search.git
+
+rule search:
+    pick: pelican/plugins/search
