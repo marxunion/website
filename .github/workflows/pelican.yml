@@ -32,7 +32,7 @@ jobs:
         key: ${{ runner.os }}-stork
         restore-keys: ${{ runner.os }}-stork
 
-    - uses: marxunion/gh-pages-pelican-stork-action@master
+    - uses: ./.github/actions/gh-pages-pelican-stork-action
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         SOURCE_FOLDER: .
