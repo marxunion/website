@@ -1,4 +1,6 @@
 FROM ubuntu:20.04
+
+ENV TZ=Europe/Moscow
 RUN apt update && apt -y install wget python3 python3-pip pandoc graphviz
 
 LABEL "com.github.actions.name"="Pelican for GitHub Pages"
