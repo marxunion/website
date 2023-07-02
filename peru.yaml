@@ -2,6 +2,7 @@ imports:
     plugins|i18n_subsites: plugins/
     plugins|extract_toc: plugins/
     search|search: plugins/
+    hierarchy: plugins/page_hierarchy/
 
 
 git module plugins:
@@ -18,3 +19,6 @@ git module search:
 
 rule search:
     export: pelican/plugins
+
+git module hierarchy:
+    url: https://github.com/akhayyat/pelican-page-hierarchy.git

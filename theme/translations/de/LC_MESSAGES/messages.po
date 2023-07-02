@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-01 22:37+0200\n"
+"POT-Creation-Date: 2023-07-02 13:01+0200\n"
 "PO-Revision-Date: 2023-06-02 15:43+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Full archives of"
 msgstr ""
 
-#: templates/article.html:44 templates/page.html:32
+#: templates/article.html:44 templates/page.html:42
 msgid "Contents"
 msgstr ""
 

@@ -18,6 +18,16 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
+<ul class="breadcrumb">
+  <li><a href="{{ SITEURL }}/" title="{{ SITENAME }}">
+    <i class="fa fa-home fa-lg"></i>
+  </a></li>
+  {% for parent in page.parents %}
+  <li><a href="{{ SITEURL }}/{{ parent.url }}">{{ parent.title }}</a></li>
+  {% endfor %}
+  <li class="active">{{ page.title }}</li>
+</ul>
+
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">

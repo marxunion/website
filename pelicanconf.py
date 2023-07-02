@@ -36,6 +36,11 @@ PATH = "content"
 STATIC_PATHS = ['content/posts', 'content/pages']
 ARTICLE_PATHS = ['content/posts']
 PAGE_PATHS = ['content/pages']
+PATH_METADATA = 'pages/(?P<path>.*)\..*'
+
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+SLUGIFY_SOURCE = 'basename'
 
 STATIC_EXCLUDES = ['plugins', 'theme', 'output']
 PAGE_EXCLUDES = STATIC_EXCLUDES
@@ -64,6 +69,7 @@ PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "i18n_subsites",
     "extract_toc",
+    "page_hierarchy",
     "search"
 ]
 
