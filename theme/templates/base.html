@@ -31,7 +31,7 @@
     </div>
     <div class="menu">
         <nav>
-            <ul>
+            <ul class="menu-items-list">
                 <li><a href="#">{% trans %}News{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Documents{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Positions{% endtrans %}</a></li>
@@ -39,7 +39,17 @@
                 <li><a href="#">{% trans %}Courses{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Join{% endtrans %}</a></li>
             </ul>
+            <div class="languages-list-wrapper">
+                <ul class="languages-list">
+                    <li class="language-item">рус</li>
+                    <li class="language-item">eng</li>
+                    <li class="language-item">de</li>
+                </ul>
+            </div>
         </nav>
+    </div>
+    <div class="mobile-background">
+
     </div>
     <div>
         <form class="search" action="#">
@@ -84,4 +94,61 @@
 <script>stork.register("sitesearch", "{{ SITEURL }}/search-index.st");</script>
 
 </body>
+    <style>
+        .languages-list-wrapper {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .languages-list-wrapper {
+                display: flex;
+                justify-content: center;
+            }
+
+            .languages-list {
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            .language-item {
+                border-bottom: none;
+                font-size: 22px;
+            }
+
+            .language-item:hover {
+                color: #8e1414;
+            }
+
+            .menu.active {
+                width: 200px;
+                padding: 0;
+                z-index:11;
+            }
+
+            nav {
+                width: 100%;
+            }
+
+            nav ul li a {
+                margin-left: 20px;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+            }
+
+            .mobile-background {
+                display: none;
+                background-color: rgba(0,0,0, 0.4);
+                width: 9000px;
+                height: 9000px;
+                position: fixed;
+                z-index: 10;
+            }
+            .mobile-background.active {
+                display: block;
+            }
+        }
+    </style>
 </html>
