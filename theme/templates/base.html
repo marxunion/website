@@ -41,9 +41,9 @@
             </ul>
             <div class="languages-list-wrapper">
                 <ul class="languages-list">
-                    <li class="language-item">рус</li>
-                    <li class="language-item">eng</li>
-                    <li class="language-item">de</li>
+                    <a href="/" class="language-item">рус</a>
+                    <a href="{{ main_siteurl }}/en" class="language-item">eng</a>
+                    <a href="{{ main_siteurl }}/de" class="language-item">de</a>
                 </ul>
             </div>
         </nav>
@@ -69,7 +69,7 @@
     <script src="/theme/js/search.js"></script>
     <div data-stork="sitesearch-output"></div>
     <div class="languages">
-        <a href="{{ main_siteurl }}" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
+        <a href="/" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
         <a href="{{ main_siteurl }}/en" {% if DEFAULT_LANG == 'en' %}style="pointer-events: none;"{% endif %}>eng</a>
         <a href="{{ main_siteurl }}/de" {% if DEFAULT_LANG == 'de' %}style="pointer-events: none;"{% endif %}>de</a>
     </div>
@@ -111,6 +111,8 @@
             }
 
             .language-item {
+                text-decoration: none;
+                color: black;
                 border-bottom: none;
                 font-size: 22px;
             }
