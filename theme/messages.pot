@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-02 13:01+0200\n"
+"POT-Creation-Date: 2023-07-10 23:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgstr ""
 msgid "Courses"
 msgstr ""
 
-#: templates/base.html:40
+#: templates/base.html:40 templates/join.html:4
 msgid "Join"
 msgstr ""
 
@@ -114,6 +114,50 @@ msgstr ""
 
 #: templates/index.html:41
 msgid "Show all news"
+msgstr ""
+
+#: templates/join.html:8 templates/join.html:14
+msgid "Fill this form to join the Union of marxists!"
+msgstr ""
+
+#: templates/join.html:22
+msgid "Join as:"
+msgstr ""
+
+#: templates/join.html:24
+msgid "Supporter"
+msgstr ""
+
+#: templates/join.html:26
+msgid "Candidate member"
+msgstr ""
+
+#: templates/join.html:27
+msgid "First name:"
+msgstr ""
+
+#: templates/join.html:29
+msgid "Last name:"
+msgstr ""
+
+#: templates/join.html:31
+msgid "Email:"
+msgstr ""
+
+#: templates/join.html:33
+msgid "Phone:"
+msgstr ""
+
+#: templates/join.html:35
+msgid "Telegram handle:"
+msgstr ""
+
+#: templates/join.html:37
+msgid "Submit"
+msgstr ""
+
+#: templates/join.html:40
+msgid "Please note that at present we only accept Russian-speaking applicants."
 msgstr ""
 
 #: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14

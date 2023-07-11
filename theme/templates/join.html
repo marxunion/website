@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% trans %}Join{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Fill this form to join the Union of marxists!{% endtrans %} {{ SITENAME|striptags|e }}
+{% endblock head_description %}
+
+{% block content %}
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1>{% trans %}Fill this form to join the Union of marxists!{% endtrans %}</h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span8 offset2">
+        {% if DEFAULT_LANG == 'ru' %}
+        <form action="https://backend.recruit.marxunion.org/">
+            <p>{% trans %}Join as:{% endtrans %}</p>
+            <input type="radio" id="sup" name="joinas" value="sup" required>
+            <label for="sup">{% trans %}Supporter{% endtrans %}</label><br>
+            <input type="radio" id="cand" name="joinas" value="cand" required>
+            <label for="cand">{% trans %}Candidate member{% endtrans %}</label><br>
+            <label for="fname">{% trans %}First name:{% endtrans %}</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">{% trans %}Last name:{% endtrans %}</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="email">{% trans %}Email:{% endtrans %}</label><br>
+            <input type="text" id="email" name="email" required><br>
+            <label for="phone">{% trans %}Phone:{% endtrans %}</label><br>
+            <input type="text" id="phone" name="phone" required><br>
+            <label for="telegram">{% trans %}Telegram handle:{% endtrans %}</label><br>
+            <input type="text" id="telegram" name="telegram"><br>
+            <input type="submit" value="{% trans %}Submit{% endtrans %}">
+        </form>
+        {% else %}
+        <p>{% trans %}Please note that at present we only accept Russian-speaking applicants.{% endtrans %}</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

@@ -32,12 +32,12 @@
     <div class="menu">
         <nav>
             <ul>
-                <li><a href="#">{% trans %}News{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}">{% trans %}News{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Documents{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Positions{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Campaigns{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Courses{% endtrans %}</a></li>
-                <li><a href="#">{% trans %}Join{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}/join.html">{% trans %}Join{% endtrans %}</a></li>
             </ul>
         </nav>
     </div>
@@ -59,7 +59,7 @@
     <script src="/theme/js/search.js"></script>
     <div data-stork="sitesearch-output"></div>
     <div class="languages">
-        <a href="{{ main_siteurl }}" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
+        <a href="{{ main_siteurl }}/" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
         <a href="{{ main_siteurl }}/en" {% if DEFAULT_LANG == 'en' %}style="pointer-events: none;"{% endif %}>eng</a>
         <a href="{{ main_siteurl }}/de" {% if DEFAULT_LANG == 'de' %}style="pointer-events: none;"{% endif %}>de</a>
     </div>
