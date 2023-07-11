@@ -3,3 +3,4 @@ output/
 plugins/
 themes/
 .idea/
+__pycache__

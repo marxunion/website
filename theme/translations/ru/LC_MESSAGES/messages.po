@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-09 21:20+0200\n"
+"POT-Creation-Date: 2023-07-11 12:59+0200\n"
 "PO-Revision-Date: 2023-01-29 16:59+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: templates/404.html:4
 msgid "Page not found"
@@ -120,6 +120,11 @@ msgstr "Последние новости"
 msgid "Show all news"
 msgstr "Показать все новости"
 
+#: templates/macros.html:3
+#, fuzzy
+msgid "Translations"
+msgstr "Переводы"
+
 #: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14
 msgid "All tags"
 msgstr "Все теги"
@@ -127,9 +132,4 @@ msgstr "Все теги"
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "All tags used by"
 msgstr "Все теги, используемые в"
-
-#: templates/translations.html:3
-#, fuzzy
-msgid "Translations"
-msgstr "Переводы"
 
