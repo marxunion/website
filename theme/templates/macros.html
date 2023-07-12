@@ -7,10 +7,36 @@
 {% endif %}
 {% endmacro %}
 
-{% macro langlist() %}
-<ul class="languages-list">
-    <li><a href="/" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a></li>
-    <li><a href="{{ main_siteurl }}/en" {% if DEFAULT_LANG == 'en' %}style="pointer-events: none;"{% endif %}>eng</a></li>
-    <li><a href="{{ main_siteurl }}/de" {% if DEFAULT_LANG == 'de' %}style="pointer-events: none;"{% endif %}>de</a></li>
-</ul>
+{% macro langlist(class) %}
+<div class="languages-list-wrapper {{class}}">
+    <div class="languages-list">
+        <a href="/" class="language-item"
+           {% if DEFAULT_LANG == 'ru' %}
+                {% if class == 'desktop' %}
+                    style="pointer-events: none;"
+                {% elif class == 'mobile' %}
+                    style="color: #8e1414;"
+                {% endif %}
+            {% endif %}
+        >рус</a>
+        <a href="{{ main_siteurl }}/en" class="language-item"
+            {% if DEFAULT_LANG == 'en' %}
+                {% if class == 'desktop' %}
+                    style="pointer-events: none;"
+                {% elif class == 'mobile' %}
+                    style="color: #8e1414;"
+                {% endif %}
+            {% endif %}
+        >eng</a>
+        <a href="{{ main_siteurl }}/de" class="language-item"
+            {% if DEFAULT_LANG == 'de' %}
+                {% if class == 'desktop' %}
+                    style="pointer-events: none;"
+                {% elif class == 'mobile' %}
+                    style="color: #8e1414;"
+                {% endif %}
+            {% endif %}
+        >de</a>
+    </div>
+</div>
 {% endmacro %}

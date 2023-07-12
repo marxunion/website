@@ -39,13 +39,7 @@
                 <li><a href="#">{% trans %}Courses{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Join{% endtrans %}</a></li>
             </ul>
-            <div class="languages-list-wrapper">
-                <ul class="languages-list">
-                    <a href="/" class="language-item">рус</a>
-                    <a href="{{ main_siteurl }}/en" class="language-item">eng</a>
-                    <a href="{{ main_siteurl }}/de" class="language-item">de</a>
-                </ul>
-            </div>
+            {{ langlist('mobile') }}
         </nav>
     </div>
     <div class="mobile-background">
@@ -68,11 +62,7 @@
     </div>
     <script src="/theme/js/search.js"></script>
     <div data-stork="sitesearch-output"></div>
-    <div class="languages">
-        <a href="/" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
-        <a href="{{ main_siteurl }}/en" {% if DEFAULT_LANG == 'en' %}style="pointer-events: none;"{% endif %}>eng</a>
-        <a href="{{ main_siteurl }}/de" {% if DEFAULT_LANG == 'de' %}style="pointer-events: none;"{% endif %}>de</a>
-    </div>
+    {{ langlist('desktop') }}
 </header>
 
 {% block content %}

@@ -193,21 +193,6 @@ form.search::after {
     display: none;
 }
 
-.languages {
-    display: flex; /* Отображаем меню языков */
-}
-
-.languages a {
-    text-decoration: none;
-    margin-right: 0.3125em;
-    font-size: 0.75em;
-    color: #fff;
-}
-
-.languages a:hover {
-    color: rgba(255, 255, 255, 0.5);
-}
-
 /* Основной контент */
 .main-news {
     display: flex;
@@ -352,7 +337,20 @@ footer {
 }
 
 .languages-list-wrapper {
+    display: flex;
+}
+
+.languages-list-wrapper.mobile {
     display: none;
+}
+
+.language-item {
+    text-decoration: none;
+    border-bottom: none;
+    color: white;
+}
+.language-item:hover {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* Скрытие навигации и смены языков на мобильных устройствах */
@@ -437,10 +435,6 @@ footer {
         height: 5px;
         background-color: #000000;
         margin: 5px 0;
-    }
-
-    .languages {
-        display: none;
     }
 
     .languages.active a {
@@ -672,21 +666,24 @@ footer {
         margin-bottom: .5em;
     }
 
-    .languages-list-wrapper {
+    .languages-list-wrapper.desktop {
+        display: none;
+    }
+
+    .languages-list-wrapper.mobile {
         display: flex;
-        justify-content: center;
+        margin-top: 20px;
     }
 
     .languages-list {
         flex-direction: row;
         width: 100%;
         justify-content: space-evenly;
+        display: flex;
     }
 
     .language-item {
-        text-decoration: none;
         color: black;
-        border-bottom: none;
         font-size: 22px;
     }
 
