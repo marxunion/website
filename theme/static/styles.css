@@ -353,6 +353,10 @@ footer {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.languages-list-wrapper.desktop .language-item.active{
+    pointer-events: none;
+}
+
 /* Скрытие навигации и смены языков на мобильных устройствах */
 @media (max-width: 800px) {
 
@@ -688,6 +692,10 @@ footer {
     }
 
     .language-item:hover {
+        color: #8e1414;
+    }
+
+    .languages-list-wrapper.mobile .language-item.active{
         color: #8e1414;
     }
 

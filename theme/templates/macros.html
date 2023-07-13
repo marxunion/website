@@ -7,32 +7,13 @@
 {% endif %}
 {% endmacro %}
 
-{% macro get_style_for_language(class) %}
-{% if class == 'desktop' %}
-    style="pointer-events: none;"
-{% elif class == 'mobile' %}
-    style="color: #8e1414;"
-{% endif %}
-{{ caller() }}
-{% endmacro %}
-
 {% macro langlist(class) %}
 <div class="languages-list-wrapper {{class}}">
     <div class="languages-list">
-        <a href="/" class="language-item"
-            {% if DEFAULT_LANG == 'ru' %}
-                {% call get_style_for_language(class) %}{% endcall %}
-        {% endif %}
-        >рус</a>
-        <a href="{{ main_siteurl }}/en" class="language-item"
-            {% if DEFAULT_LANG == 'en' %}
-                {% call get_style_for_language(class) %}{% endcall %}
-            {% endif %}
+        <a href="/" class="language-item {% if DEFAULT_LANG == 'ru' %}active{% endif %}">рус</a>
+        <a href="{{ main_siteurl }}/en" class="language-item {% if DEFAULT_LANG == 'en' %}active{% endif %}"
         >eng</a>
-        <a href="{{ main_siteurl }}/de" class="language-item"
-            {% if DEFAULT_LANG == 'de' %}
-                {% call get_style_for_language(class) %}{% endcall %}
-            {% endif %}
+        <a href="{{ main_siteurl }}/de" class="language-item {% if DEFAULT_LANG == 'de' %}active{% endif %}"
         >de</a>
     </div>
 </div>
