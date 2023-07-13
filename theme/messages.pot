@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-13 00:26+0200\n"
+"POT-Creation-Date: 2023-07-10 23:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: templates/404.html:4
 msgid "Page not found"
@@ -90,11 +90,11 @@ msgstr ""
 msgid "Courses"
 msgstr ""
 
-#: templates/base.html:40
+#: templates/base.html:40 templates/join.html:4
 msgid "Join"
 msgstr ""
 
-#: templates/base.html:50 templates/base.html:55
+#: templates/base.html:46 templates/base.html:51
 msgid "Search"
 msgstr ""
 
@@ -116,8 +116,48 @@ msgstr ""
 msgid "Show all news"
 msgstr ""
 
-#: templates/macros.html:3
-msgid "Translations"
+#: templates/join.html:8 templates/join.html:14
+msgid "Fill this form to join the Union of marxists!"
+msgstr ""
+
+#: templates/join.html:22
+msgid "Join as:"
+msgstr ""
+
+#: templates/join.html:24
+msgid "Supporter"
+msgstr ""
+
+#: templates/join.html:26
+msgid "Candidate member"
+msgstr ""
+
+#: templates/join.html:27
+msgid "First name:"
+msgstr ""
+
+#: templates/join.html:29
+msgid "Last name:"
+msgstr ""
+
+#: templates/join.html:31
+msgid "Email:"
+msgstr ""
+
+#: templates/join.html:33
+msgid "Phone:"
+msgstr ""
+
+#: templates/join.html:35
+msgid "Telegram handle:"
+msgstr ""
+
+#: templates/join.html:37
+msgid "Submit"
+msgstr ""
+
+#: templates/join.html:40
+msgid "Please note that at present we only accept Russian-speaking applicants."
 msgstr ""
 
 #: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14
@@ -126,5 +166,9 @@ msgstr ""
 
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "All tags used by"
+msgstr ""
+
+#: templates/translations.html:3
+msgid "Translations"
 msgstr ""
 

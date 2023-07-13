@@ -32,12 +32,12 @@
     <div class="menu">
         <nav>
             <ul class="menu-items-list">
-                <li><a href="#">{% trans %}News{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}">{% trans %}News{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Documents{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Positions{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Campaigns{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Courses{% endtrans %}</a></li>
-                <li><a href="#">{% trans %}Join{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}/join.html">{% trans %}Join{% endtrans %}</a></li>
             </ul>
             {{ langlist('mobile') }}
         </nav>

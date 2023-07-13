@@ -28,7 +28,7 @@ DEFAULT_DATE = "fs"
 
 # ONLY TOUCH IF YOU KNOW WHAT YOU'RE DOING!
 # ---------------------------------------------------------------------
-DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "404")
+DIRECT_TEMPLATES = ("index", "join", "tags", "categories", "archives", "404")
 INDEX_SAVE_AS = 'index.html'
 OUTPUT_PATH = 'output'
 
