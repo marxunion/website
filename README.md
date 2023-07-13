@@ -1,0 +1,5 @@
+To build locally:
+
+1. Install [Stork search](https://stork-search.net/docs/install) and add it to PATH
+2. `pip install -r requirements.txt`
+3. Run `publi.sh`
