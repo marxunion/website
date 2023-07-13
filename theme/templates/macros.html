@@ -1,0 +1,20 @@
+{% macro translations(article) %}
+{% if article.translations %}
+{% trans %}Translations{% endtrans %}:
+{% for translation in article.translations %}
+<a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
+{% endfor %}
+{% endif %}
+{% endmacro %}
+
+{% macro langlist(class) %}
+<div class="languages-list-wrapper {{class}}">
+    <div class="languages-list">
+        <a href="/" class="language-item {% if DEFAULT_LANG == 'ru' %}active{% endif %}">рус</a>
+        <a href="{{ main_siteurl }}/en" class="language-item {% if DEFAULT_LANG == 'en' %}active{% endif %}"
+        >eng</a>
+        <a href="{{ main_siteurl }}/de" class="language-item {% if DEFAULT_LANG == 'de' %}active{% endif %}"
+        >de</a>
+    </div>
+</div>
+{% endmacro %}

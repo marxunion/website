@@ -20,7 +20,7 @@
     <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
 </head>
 <body>
-
+{% from 'macros.html' import langlist with context %}
 <header>
     <a href="{{ SITEURL }}" aria-label="Home"><img src="/theme/icons/logoSM.svg" class="logo" alt="{{ SITENAME }}"></a>
     <a href="{{ SITEURL }}" aria-label="Home"><img src="/theme/icons/logoSMblack.svg" class="logomob" alt="{{ SITENAME }}"></a>
@@ -31,7 +31,7 @@
     </div>
     <div class="menu">
         <nav>
-            <ul>
+            <ul class="menu-items-list">
                 <li><a href="{{ SITEURL }}">{% trans %}News{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Documents{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Positions{% endtrans %}</a></li>
@@ -39,7 +39,11 @@
                 <li><a href="#">{% trans %}Courses{% endtrans %}</a></li>
                 <li><a href="{{ SITEURL }}/join.html">{% trans %}Join{% endtrans %}</a></li>
             </ul>
+            {{ langlist('mobile') }}
         </nav>
+    </div>
+    <div class="mobile-background">
+
     </div>
     <div>
         <form class="search" action="#">
@@ -58,11 +62,7 @@
     </div>
     <script src="/theme/js/search.js"></script>
     <div data-stork="sitesearch-output"></div>
-    <div class="languages">
-        <a href="{{ main_siteurl }}/" {% if DEFAULT_LANG == 'ru' %}style="pointer-events: none;"{% endif %}>рус</a>
-        <a href="{{ main_siteurl }}/en" {% if DEFAULT_LANG == 'en' %}style="pointer-events: none;"{% endif %}>eng</a>
-        <a href="{{ main_siteurl }}/de" {% if DEFAULT_LANG == 'de' %}style="pointer-events: none;"{% endif %}>de</a>
-    </div>
+    {{ langlist('desktop') }}
 </header>
 
 {% block content %}

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-10 23:23+0200\n"
+"POT-Creation-Date: 2023-07-13 17:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: templates/404.html:4
 msgid "Page not found"
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Join"
 msgstr ""
 
-#: templates/base.html:46 templates/base.html:51
+#: templates/base.html:50 templates/base.html:55
 msgid "Search"
 msgstr ""
 
@@ -160,15 +160,15 @@ msgstr ""
 msgid "Please note that at present we only accept Russian-speaking applicants."
 msgstr ""
 
+#: templates/macros.html:3
+msgid "Translations"
+msgstr ""
+
 #: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14
 msgid "All tags"
 msgstr ""
 
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "All tags used by"
-msgstr ""
-
-#: templates/translations.html:3
-msgid "Translations"
 msgstr ""
 
