@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-13 17:26+0200\n"
+"POT-Creation-Date: 2023-07-15 12:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,35 +128,89 @@ msgstr ""
 msgid "Supporter"
 msgstr ""
 
-#: templates/join.html:26
+#: templates/join.html:25
 msgid "Candidate member"
 msgstr ""
 
-#: templates/join.html:27
+#: templates/join.html:28
 msgid "First name:"
 msgstr ""
 
-#: templates/join.html:29
+#: templates/join.html:31
 msgid "Last name:"
 msgstr ""
 
-#: templates/join.html:31
-msgid "Email:"
-msgstr ""
-
-#: templates/join.html:33
-msgid "Phone:"
-msgstr ""
-
-#: templates/join.html:35
-msgid "Telegram handle:"
+#: templates/join.html:34
+msgid "Nickname:"
 msgstr ""
 
 #: templates/join.html:37
-msgid "Submit"
+msgid "Gender:"
+msgstr ""
+
+#: templates/join.html:39
+msgid "Not specified"
 msgstr ""
 
 #: templates/join.html:40
+msgid "Female"
+msgstr ""
+
+#: templates/join.html:41
+msgid "Male"
+msgstr ""
+
+#: templates/join.html:44
+msgid "Age:"
+msgstr ""
+
+#: templates/join.html:47
+msgid "Email:"
+msgstr ""
+
+#: templates/join.html:50
+msgid "Phone:"
+msgstr ""
+
+#: templates/join.html:53
+msgid "Telegram:"
+msgstr ""
+
+#: templates/join.html:56
+msgid "Vkontakte:"
+msgstr ""
+
+#: templates/join.html:59
+msgid "Facebook:"
+msgstr ""
+
+#: templates/join.html:62
+msgid "Country:"
+msgstr ""
+
+#: templates/join.html:65
+msgid "Russia region:"
+msgstr ""
+
+#: templates/join.html:156
+msgid "City:"
+msgstr ""
+
+#: templates/join.html:159
+msgid "Metro station:"
+msgstr ""
+
+#: templates/join.html:164
+msgid ""
+"Include data about your browser environment(browser type, page URL, "
+"screen resolution). It will allow us to better understand your inquiry.."
+msgstr ""
+
+#: templates/join.html:167
+msgid "Submit"
+msgstr ""
+
+#: templates/join.html:170
 msgid "Please note that at present we only accept Russian-speaking applicants."
 msgstr ""
 

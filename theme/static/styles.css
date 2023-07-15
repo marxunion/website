@@ -355,6 +355,7 @@ footer {
 
 .languages-list-wrapper.desktop .language-item.active{
     pointer-events: none;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* Скрытие навигации и смены языков на мобильных устройствах */

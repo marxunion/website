@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-13 17:26+0200\n"
+"POT-Creation-Date: 2023-07-15 12:02+0200\n"
 "PO-Revision-Date: 2023-01-29 16:59+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -132,35 +132,92 @@ msgstr "Присоединиться в качестве:"
 msgid "Supporter"
 msgstr "Сторонника"
 
-#: templates/join.html:26
+#: templates/join.html:25
 msgid "Candidate member"
 msgstr "Кандидата в члены СМ"
 
-#: templates/join.html:27
+#: templates/join.html:28
 msgid "First name:"
 msgstr "Имя"
 
-#: templates/join.html:29
+#: templates/join.html:31
 msgid "Last name:"
 msgstr "Фамилия"
 
-#: templates/join.html:31
+#: templates/join.html:34
+msgid "Nickname:"
+msgstr "Ник:"
+
+#: templates/join.html:37
+msgid "Gender:"
+msgstr "Гендер:"
+
+#: templates/join.html:39
+msgid "Not specified"
+msgstr "Не указывать"
+
+#: templates/join.html:40
+msgid "Female"
+msgstr "Женщина"
+
+#: templates/join.html:41
+msgid "Male"
+msgstr "Мужчина"
+
+#: templates/join.html:44
+msgid "Age:"
+msgstr "Возраст"
+
+#: templates/join.html:47
 msgid "Email:"
 msgstr ""
 
-#: templates/join.html:33
+#: templates/join.html:50
 msgid "Phone:"
 msgstr "Телефон:"
 
-#: templates/join.html:35
-msgid "Telegram handle:"
+#: templates/join.html:53
+#, fuzzy
+msgid "Telegram:"
 msgstr "Имя пользователя в Telegram:"
 
-#: templates/join.html:37
+#: templates/join.html:56
+msgid "Vkontakte:"
+msgstr "ВКонтакте"
+
+#: templates/join.html:59
+msgid "Facebook:"
+msgstr ""
+
+#: templates/join.html:62
+msgid "Country:"
+msgstr "Страна"
+
+#: templates/join.html:65
+msgid "Russia region:"
+msgstr "Регион России"
+
+#: templates/join.html:156
+msgid "City:"
+msgstr "Населённый пункт:"
+
+#: templates/join.html:159
+msgid "Metro station:"
+msgstr "Станция метро:"
+
+#: templates/join.html:164
+msgid ""
+"Include data about your browser environment(browser type, page URL, "
+"screen resolution). It will allow us to better understand your inquiry.."
+msgstr ""
+"Включите данные о вашей текущей среде, например, о типе браузера и URL "
+"страницы. Это поможет нам лучше понять ваш отзыв."
+
+#: templates/join.html:167
 msgid "Submit"
 msgstr "Отправить"
 
-#: templates/join.html:40
+#: templates/join.html:170
 msgid "Please note that at present we only accept Russian-speaking applicants."
 msgstr ""
 
@@ -176,4 +233,10 @@ msgstr "Все теги"
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "All tags used by"
 msgstr "Все теги, используемые в"
+
+#~ msgid "Not specified"
+#~ msgstr ""
+
+#~ msgid "Not specifie"
+#~ msgstr ""
 

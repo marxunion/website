@@ -19,21 +19,151 @@
     <div class="span8 offset2">
         {% if DEFAULT_LANG == 'ru' %}
         <form action="https://backend.recruit.marxunion.org/">
-            <p>{% trans %}Join as:{% endtrans %}</p>
-            <input type="radio" id="sup" name="joinas" value="sup" required>
-            <label for="sup">{% trans %}Supporter{% endtrans %}</label><br>
-            <input type="radio" id="cand" name="joinas" value="cand" required>
-            <label for="cand">{% trans %}Candidate member{% endtrans %}</label><br>
-            <label for="fname">{% trans %}First name:{% endtrans %}</label><br>
-            <input type="text" id="fname" name="fname" required><br>
-            <label for="lname">{% trans %}Last name:{% endtrans %}</label><br>
-            <input type="text" id="lname" name="lname" required><br>
+            <label for="join-as">{% trans %}Join as:{% endtrans %}</label><br>
+            <select id="join-as" name="joinAs" required>
+                <option value="supporter">{% trans %}Supporter{% endtrans %}</option>
+                <option value="candidate">{% trans %}Candidate member{% endtrans %}</option>
+            </select><br>
+
+            <label for="first-name">{% trans %}First name:{% endtrans %}</label><br>
+            <input type="text" id="first-name" name="firstName" required><br>
+
+            <label for="last-name">{% trans %}Last name:{% endtrans %}</label><br>
+            <input type="text" id="last-name" name="lastName" required><br>
+
+            <label for="nickname">{% trans %}Nickname:{% endtrans %}</label><br>
+            <input type="text" id="nickname" name="nickname" required><br>
+
+            <label for="gender">{% trans %}Gender:{% endtrans %}</label><br>
+            <select id="gender" name="gender" required>
+                <option value="not-specified">{% trans %}Not specified{% endtrans %}</option>
+                <option value="female">{% trans %}Female{% endtrans %}</option>
+                <option value="male">{% trans %}Male{% endtrans %}</option>
+            </select><br>
+
+            <label for="age">{% trans %}Age:{% endtrans %}</label><br>
+            <input type="number" id="age" name="age" required><br>
+
             <label for="email">{% trans %}Email:{% endtrans %}</label><br>
-            <input type="text" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required><br>
+
             <label for="phone">{% trans %}Phone:{% endtrans %}</label><br>
-            <input type="text" id="phone" name="phone" required><br>
-            <label for="telegram">{% trans %}Telegram handle:{% endtrans %}</label><br>
+            <input type="number" id="phone" name="phone" required><br>
+
+            <label for="telegram">{% trans %}Telegram:{% endtrans %}</label><br>
             <input type="text" id="telegram" name="telegram"><br>
+
+            <label for="vkontakte">{% trans %}Vkontakte:{% endtrans %}</label><br>
+            <input type="text" id="vkontakte" name="vkontakte"><br>
+
+            <label for="facebook">{% trans %}Facebook:{% endtrans %}</label><br>
+            <input type="text" id="facebook" name="facebook"><br>
+
+            <label for="country">{% trans %}Country:{% endtrans %}</label><br>
+            <input type="text" id="country" name="country"><br>
+
+            <label for="russia-region">{% trans %}Russia region:{% endtrans %}</label><br>
+            <select name="russia-region" id="russia-region">
+                <option value="-1">Не заполнено</option>
+                <option value="10406">Республика Адыгея (Адыгея)</option>
+                <option value="10407">Республика Башкортостан</option>
+                <option value="10408">Республика Бурятия</option>
+                <option value="10409">Республика Алтай</option>
+                <option value="10410">Республика Дагестан</option>
+                <option value="10411">Республика Ингушетия</option>
+                <option value="10412">Кабардино-Балкарская Республика</option>
+                <option value="10413">Республика Калмыкия</option>
+                <option value="10414">Карачаево-Черкесская Республика</option>
+                <option value="10415">Республика Карелия</option>
+                <option value="10416">Республика Коми</option>
+                <option value="10417">Республика Марий Эл</option>
+                <option value="10418">Республика Мордовия</option>
+                <option value="10419">Республика Саха (Якутия)</option>
+                <option value="10420">Республика Северная Осетия - Алания</option>
+                <option value="10421">Республика Татарстан (Татарстан)</option>
+                <option value="10422">Республика Тыва</option>
+                <option value="10423">Удмуртская Республика</option>
+                <option value="10424">Республика Хакасия</option>
+                <option value="10425">Чеченская Республика</option>
+                <option value="10426">Чувашская Республика - Чувашия</option>
+                <option value="10427">Алтайский край</option>
+                <option value="10428">Краснодарский край</option>
+                <option value="10429">Красноярский край</option>
+                <option value="10430">Приморский край</option>
+                <option value="10431">Ставропольский край</option>
+                <option value="10432">Хабаровский край</option>
+                <option value="10433">Амурская область</option>
+                <option value="10434">Архангельская область</option>
+                <option value="10435">Астраханская область</option>
+                <option value="10436">Белгородская область</option>
+                <option value="10437">Брянская область</option>
+                <option value="10438">Владимирская область</option>
+                <option value="10439">Волгоградская область</option>
+                <option value="10440">Вологодская область</option>
+                <option value="10441">Воронежская область</option>
+                <option value="10442">Ивановская область</option>
+                <option value="10443">Иркутская область</option>
+                <option value="10444">Калининградская область</option>
+                <option value="10445">Калужская область</option>
+                <option value="10446">Камчатский край</option>
+                <option value="10447">Кемеровская область</option>
+                <option value="10448">Кировская область</option>
+                <option value="10449">Костромская область</option>
+                <option value="10450">Курганская область</option>
+                <option value="10451">Курская область</option>
+                <option value="10452">Ленинградская область</option>
+                <option value="10453">Липецкая область</option>
+                <option value="10454">Магаданская область</option>
+                <option value="10455">Московская область</option>
+                <option value="10456">Мурманская область</option>
+                <option value="10457">Нижегородская область</option>
+                <option value="10458">Новгородская область</option>
+                <option value="10459">Новосибирская область</option>
+                <option value="10460">Омская область</option>
+                <option value="10461">Оренбургская область</option>
+                <option value="10462">Орловская область</option>
+                <option value="10463">Пензенская область</option>
+                <option value="10464">Пермский край</option>
+                <option value="10465">Псковская область</option>
+                <option value="10466">Ростовская область</option>
+                <option value="10467">Рязанская область</option>
+                <option value="10468">Самарская область</option>
+                <option value="10469">Саратовская область</option>
+                <option value="10470">Сахалинская область</option>
+                <option value="10471">Свердловская область</option>
+                <option value="10472">Смоленская область</option>
+                <option value="10473">Тамбовская область</option>
+                <option value="10474">Тверская область</option>
+                <option value="10475">Томская область</option>
+                <option value="10476">Тульская область</option>
+                <option value="10477">Тюменская область</option>
+                <option value="10478">Ульяновская область</option>
+                <option value="10479">Челябинская область</option>
+                <option value="10480">Забайкальский край</option>
+                <option value="10481">Ярославская область</option>
+                <option value="10482">Москва</option>
+                <option value="10483">Санкт-Петербург</option>
+                <option value="10484">Еврейская автономная область</option>
+                <option value="10485">Ненецкий автономный округ</option>
+                <option value="10486">Ханты-Мансийский автономный округ - Югра</option>
+                <option value="10487">Чукотский автономный округ</option>
+                <option value="10488">Ямало-Ненецкий автономный округ</option>
+                <option value="10489">Иные территории, включая город и космодром Байконур</option>
+                <option value="10490">Республика Крым</option>
+                <option value="10491">Севастополь</option>
+            </select>
+
+            <label for="city">{% trans %}City:{% endtrans %}</label><br>
+            <input type="text" id="city" name="city"><br>
+
+            <label for="metro-station">{% trans %}Metro station:{% endtrans %}</label><br>
+            <input type="text" id="metro-station" name="metro-station"><br>
+
+            <input type="checkbox" id="browser-data" name="browserData" value="1">
+            <label for="browser-data">
+                {% trans %}Include data about your browser environment(browser type, page URL, screen resolution). It will allow us to better understand your inquiry..{% endtrans %}
+            </label><br>
+
             <input type="submit" value="{% trans %}Submit{% endtrans %}">
         </form>
         {% else %}
