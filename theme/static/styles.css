@@ -735,5 +735,48 @@ footer {
         display: block;
     }
 
+    .stork-wrapper {
+        width: 180px;
+    }
+
+    .stork-wrapper .stork-output {
+        margin-left: 25px;
+        margin-right: 25px;
+        position: fixed;
+        left: 0;
+        width: calc(100vw - 50px);
+        display: flex;
+    }
+
 }
 
+.stork-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.stork-wrapper .stork-close-button {
+    color: #8e1414;
+    background: white;
+    border: none;
+    margin-bottom: 3px;
+    margin-right: 60px;
+}
+
+.stork-wrapper .stork-input {
+    background: white;
+    border-radius: 10px 0 0 10px;
+    height: 35px;
+    box-shadow: none;
+    border: 1px solid #8e1414;
+}
+
+.search-button {
+    border-radius: 0 10px 10px 0;
+    padding: 8px 20px 8px 20px;
+    background: white;
+    color: #8e1414;
+    font-size: 1em;
+    border: 1px solid #8e1414;
+    border-left: none;
+}
