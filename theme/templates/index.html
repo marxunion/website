@@ -24,31 +24,45 @@
 
 {% block content %}
 <main>
-    {% for article in articles %}
-    {% if loop.first %}
+    {# Featured article #}
+    {% if articles_page.object_list and not articles_page.has_previous() %}
+    {% set article = articles_page.object_list[0] %}
     <section class="main-news">
         <div class="image-wrapper">
             <a href="{{ SITEURL }}/{{ article.url }}"><img src="{{ article.cover }}" alt="{{ article.title }}"></a>
         </div>
         <div class="news-overlay">
             <a href="{{ SITEURL }}/{{ article.url }}"><h1>{{ article.title }}</h1></a>
-            <p>{{ article.content }}</p>
+            <p>{{ article.summary }}</p>
         </div>
     </section>
+    {% endif %}
+
+    {# Other articles #}
     <section class="other-news">
-        <div class="news-header">
-            <h2>{% trans %}Latest news{% endtrans %}</h2>
-            <a href="#" class="all-news-link">{% trans %}Show all news{% endtrans %}</a>
-        </div>
-    {% else %}
+    {% set begin = 0 if articles_page.has_previous() else 1 %}
+    {% if articles_page.object_list|length > begin %}
+    {% for article in articles_page.object_list[begin:] %}
         <div class="news-block">
-            <a href="{{ SITEURL }}/{{ article.url }}"><img src="#" alt="{{ article.title }}"></a>
+            <a href="{{ SITEURL }}/{{ article.url }}"><img src="{{ article.cover }}" alt="{{ article.title }}"></a>
             <a href="{{ SITEURL }}/{{ article.url }}"><h3>{{ article.title }}</h3></a>
             <p>{{ article.summary }}</p>
             <time datetime="{{ article.date }}">{{ article.locale_date }}</time>
         </div>
-    {% endif %}
     {% endfor %}
+    {% endif %}
     </section>
-</main>
+    <ul class="actions pagination">
+        {% if articles_page.has_previous() %}
+        <li><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Previous Page{% endtrans %}</a></li>
+        {% else %}
+        <li><a class="disabled button large previous">{% trans %}Previous Page{% endtrans %}</a></li>
+        {% endif %}
+        {% if articles_page.has_next() %}
+        <li><a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Next Page{% endtrans %}</a></li>
+        {% else %}
+        <li><a class="disabled button large next">{% trans %}Next Page{% endtrans %}</a></li>
+        {% endif %}
+    </ul>
+    </main>
 {% endblock content %}

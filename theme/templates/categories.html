@@ -50,14 +50,14 @@
                         <ul class="list-articles-under-tag-category">
                             {% for article in articles %}
                             <li itemscope>
-                                    <a href="{{ SITEURL }}/{{ article.url }}">
-                                        {{ article.title }}
-                                        {% if article.subtitle %}
-                                        <small class="subtitle">
-                                            {{ article.subtitle }}
-                                        </small>
-                                        {% endif %}
-                                    </a>
+                                <a href="{{ SITEURL }}/{{ article.url }}">
+                                    {{ article.title }}
+                                    {% if article.subtitle %}
+                                    <small class="subtitle">
+                                        {{ article.subtitle }}
+                                    </small>
+                                    {% endif %}
+                                </a>
                                 <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
                                     {{ article.locale_date }}
                                 </time>
