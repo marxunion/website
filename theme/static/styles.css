@@ -739,6 +739,15 @@ footer {
         width: 180px;
     }
 
+    .stork-wrapper .stork-output {
+        margin-left: 25px;
+        margin-right: 25px;
+        position: fixed;
+        left: 0;
+        width: calc(100vw - 50px);
+        display: flex;
+    }
+
 }
 
 .stork-input-wrapper {
