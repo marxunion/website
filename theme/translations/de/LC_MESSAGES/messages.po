@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-13 17:26+0200\n"
+"POT-Creation-Date: 2023-07-15 15:25+0200\n"
 "PO-Revision-Date: 2023-06-02 15:43+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -95,10 +95,6 @@ msgstr ""
 msgid "Join"
 msgstr ""
 
-#: templates/base.html:50 templates/base.html:55
-msgid "Search"
-msgstr ""
-
 #: templates/categories.html:4 templates/categories.html:13
 #: templates/categories.html:14 templates/categories.html:33
 msgid "All Categories"
@@ -172,4 +168,59 @@ msgstr ""
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "All tags used by"
 msgstr ""
+
+#~ msgid "Telegram handle:"
+#~ msgstr ""
+
+#~ msgid "Not specified"
+#~ msgstr ""
+
+#~ msgid "Not specifie"
+#~ msgstr ""
+
+#~ msgid "Search"
+#~ msgstr ""
+
+#~ msgid "Nickname:"
+#~ msgstr ""
+
+#~ msgid "Gender:"
+#~ msgstr ""
+
+#~ msgid "Female"
+#~ msgstr ""
+
+#~ msgid "Male"
+#~ msgstr ""
+
+#~ msgid "Age:"
+#~ msgstr ""
+
+#~ msgid "Telegram:"
+#~ msgstr ""
+
+#~ msgid "Vkontakte:"
+#~ msgstr ""
+
+#~ msgid "Facebook:"
+#~ msgstr ""
+
+#~ msgid "Country:"
+#~ msgstr ""
+
+#~ msgid "Russia region:"
+#~ msgstr ""
+
+#~ msgid "City:"
+#~ msgstr ""
+
+#~ msgid "Metro station:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Include data about your browser "
+#~ "environment(browser type, page URL, screen "
+#~ "resolution). It will allow us to "
+#~ "better understand your inquiry.."
+#~ msgstr ""
 

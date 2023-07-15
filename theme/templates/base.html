@@ -45,23 +45,15 @@
     <div class="mobile-background">
 
     </div>
-    <div>
-        <form class="search" action="#">
-            <input data-stork="sitesearch" type="text" placeholder="{% trans %}Search{% endtrans %}" name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <div class="search-box">
-        <input data-stork="sitesearch" type="text" placeholder="{% trans %}Search{% endtrans %}" name="search">
-        <div class="search-btn">
-            <i class="fas fa-search"></i>
+    <div class="stork-wrapper">
+        <div class="stork-input-wrapper">
+            <input data-stork="site-search" class="stork-input" />
+            <div class="search-button">
+                <i class="fas fa-search"></i>
+            </div>
         </div>
-        <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-        </div>
+        <div data-stork="site-search-output" class="stork-output"></div>
     </div>
-    <script src="/theme/js/search.js"></script>
-    <div data-stork="sitesearch-output"></div>
     {{ langlist('desktop') }}
 </header>
 
@@ -80,8 +72,9 @@
     <div class="footer-logo">{{ SITENAME }}</div>
 </footer>
 
-<script src="https://files.stork-search.net/releases/v1.5.0/stork.js"></script>
-<script>stork.register("sitesearch", "{{ SITEURL }}/search-index.st");</script>
-
+<script src="https://files.stork-search.net/releases/v1.6.0/stork.js"></script>
+<script>
+    stork.register("site-search", "{{ SITEURL }}/search-index.st")
+</script>
 </body>
 </html>
