@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-16 22:41+0200\n"
+"POT-Creation-Date: 2023-07-16 22:52+0200\n"
 "PO-Revision-Date: 2023-01-29 16:59+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -108,13 +108,15 @@ msgstr "Все категории"
 msgid "All categories in"
 msgstr "Все категории в"
 
-#: templates/index.html:40
-msgid "Latest news"
-msgstr "Последние новости"
+#: templates/index.html:57 templates/index.html:59
+#, fuzzy
+msgid "Previous Page"
+msgstr "Предудущая"
 
-#: templates/index.html:41
-msgid "Show all news"
-msgstr "Показать все новости"
+#: templates/index.html:62 templates/index.html:64
+#, fuzzy
+msgid "Next Page"
+msgstr "Следующая"
 
 #: templates/join.html:8
 msgid "Fill this form to join the Union of marxists!"
@@ -203,9 +205,10 @@ msgid "Metro station"
 msgstr "Станция метро"
 
 #: templates/join.html:147
+#, fuzzy
 msgid ""
 "Include data about your browser environment(browser type, page URL, "
-"screen resolution). It will allow us to better understand your inquiry.."
+"screen resolution). It will allow us to better understand your inquiry."
 msgstr ""
 "Включить данные о вашей текущей среде, например, о типе браузера и URL "
 "страницы. Это поможет нам лучше понять ваш отзыв."
@@ -242,4 +245,10 @@ msgstr "Все теги, используемые в"
 
 #~ msgid "Email:"
 #~ msgstr ""
+
+#~ msgid "Latest news"
+#~ msgstr "Последние новости"
+
+#~ msgid "Show all news"
+#~ msgstr "Показать все новости"
 

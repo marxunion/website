@@ -150,45 +150,6 @@ ul.breadcrumb li a:hover {
     box-sizing: border-box;
 }
 
-form.search input[type=text] {
-    padding: 6px;
-    padding-left: 16px;
-    border-radius: 10px 0 0 10px;
-    font-size: 1em;
-    border: 1px solid #8e1414;
-    float: left;
-    width: 80%;
-    background: #ffffff;
-}
-
-form.search button {
-    float: left;
-    border-radius: 0 10px 10px 0;
-    width: 20%;
-    padding: 6px;
-    background: #ffffff;
-    color: #8e1414;
-    font-size: 1em;
-    border: 1px solid #8e1414;
-    border-left: none;
-    cursor: pointer;
-}
-
-form.search button:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: #ffffff;
-}
-
-form.search::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.search-box {
-    display: none;
-}
-
 /* Основной контент */
 .main-news {
     display: flex;
@@ -442,39 +403,8 @@ footer {
         color: #000;
     }
 
-    .search {
-        display: none;
-    }
-
     * {
         box-sizing: border-box;
-    }
-
-    .search-box {
-        order: -1;
-        display: block;
-        position: relative;
-        width: 50px;
-        height: 50px;
-        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    .search-box.active {
-        width: 350px;
-    }
-
-    .search-box input {
-        width: 100%;
-        height: 100%;
-        border: none;
-        background-color: #808080;
-        color: #fff;
-        font-size: 18px;
-        border-radius: 50px;
-        padding: 0 60px 0 20px;
-        outline: none;
-        opacity: 0;
-        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     ::-webkit-input-placeholder { /* WebKit browsers */
@@ -491,57 +421,6 @@ footer {
 
     :-ms-input-placeholder { /* Internet Explorer 10+ */
         color: rgb(200, 200, 200);
-    }
-
-    .search-box.active input {
-        opacity: 1;
-    }
-
-    .search-box .search-btn {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        z-index: 1;
-        width: 40px;
-        height: 40px;
-        color: #000000;
-        border-radius: 50px;
-        background-color: #ffffff;
-        font-size: 20px;
-        text-align: center;
-        padding-left: 2px;
-        line-height: 45px;
-        transform: translateY(-50%);
-        cursor: pointer;
-        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    .search-box .search-btn.active {
-        position: absolute;
-        top: 50%;
-        right: 5px;
-        width: 40px;
-        height: 40px;
-        color: #000;
-        border-radius: 50px;
-        background-color: #ffffff;
-        transform: translateY(-50%) rotate(360deg);
-    }
-
-    .search-box .cancel-btn {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        color: #000;
-        font-size: 20px;
-        cursor: pointer;
-        transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    .search-box .cancel-btn.active {
-        right: -40px;
-        transform: translateY(-50%) rotate(360deg);
     }
 
     .main-news {

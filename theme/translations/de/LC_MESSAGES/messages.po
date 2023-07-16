@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-16 22:41+0200\n"
+"POT-Creation-Date: 2023-07-16 22:52+0200\n"
 "PO-Revision-Date: 2023-06-02 15:43+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -105,12 +105,12 @@ msgstr ""
 msgid "All categories in"
 msgstr ""
 
-#: templates/index.html:40
-msgid "Latest news"
+#: templates/index.html:57 templates/index.html:59
+msgid "Previous Page"
 msgstr ""
 
-#: templates/index.html:41
-msgid "Show all news"
+#: templates/index.html:62 templates/index.html:64
+msgid "Next Page"
 msgstr ""
 
 #: templates/join.html:8
@@ -200,7 +200,7 @@ msgstr ""
 #: templates/join.html:147
 msgid ""
 "Include data about your browser environment(browser type, page URL, "
-"screen resolution). It will allow us to better understand your inquiry.."
+"screen resolution). It will allow us to better understand your inquiry."
 msgstr ""
 
 #: templates/join.html:152
@@ -278,5 +278,18 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "First name:"
+#~ msgstr ""
+
+#~ msgid "Latest news"
+#~ msgstr ""
+
+#~ msgid "Show all news"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Include data about your browser "
+#~ "environment(browser type, page URL, screen "
+#~ "resolution). It will allow us to "
+#~ "better understand your inquiry.."
 #~ msgstr ""
 
