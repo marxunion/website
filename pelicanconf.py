@@ -2,8 +2,6 @@
 from __future__ import unicode_literals
 import datetime
 
-# THINGS TO CONFIGURE
-# ---------------------------------------------------------------------
 
 SITENAME = "Союз марксистов"
 SITESUBTITLE = ""
@@ -26,9 +24,8 @@ DEFAULT_DATE = "fs"
 # PHOTO_EXIF_REMOVE_GPS = True
 # PHOTO_EXIF_COPYRIGHT = "CREATIVE COMMONS"
 
-# ONLY TOUCH IF YOU KNOW WHAT YOU'RE DOING!
-# ---------------------------------------------------------------------
-DIRECT_TEMPLATES = ("index", "join", "tags", "categories", "archives", "404")
+DIRECT_TEMPLATES = ["index", "join", "tags", "categories", "archives", "404"]
+PAGINATED_TEMPLATES = {"index": 2}
 INDEX_SAVE_AS = 'index.html'
 OUTPUT_PATH = 'output'
 
