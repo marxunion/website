@@ -12,40 +12,40 @@
 
 <div class="join-form-wrapper">
     {% if DEFAULT_LANG == 'ru' %}
-    <h1>{% trans %}Join{% endtrans %}</h1><br>
+    <h1>{% trans %}Join{% endtrans %}</h1>
     <form action="https://backend.recruit.marxunion.org/">
         <select class="join-form-input" id="join-as" name="joinAs" required>
             <option value="" disabled selected>{% trans %}Join as{% endtrans %}</option>
             <option value="supporter">{% trans %}Supporter{% endtrans %}</option>
             <option value="candidate">{% trans %}Candidate member{% endtrans %}</option>
-        </select><br>
+        </select>
 
-        <input class="join-form-input" type="text" id="first-name" name="firstName" required placeholder="{% trans %}First name{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="first-name" name="firstName" required placeholder="{% trans %}First name{% endtrans %}">
 
-        <input class="join-form-input" type="text" id="last-name" name="lastName" required placeholder="{% trans %}Last name{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="last-name" name="lastName" required placeholder="{% trans %}Last name{% endtrans %}">
 
-        <input class="join-form-input" type="text" id="nickname" name="nickname" required placeholder="{% trans %}Nickname{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="nickname" name="nickname" required placeholder="{% trans %}Nickname{% endtrans %}">
 
         <select class="join-form-input" id="gender" name="gender" required>
             <option value="" disabled selected>{% trans %}Gender{% endtrans %}</option>
             <option value="not-specified">{% trans %}Not specified{% endtrans %}</option>
             <option value="female">{% trans %}Female{% endtrans %}</option>
             <option value="male">{% trans %}Male{% endtrans %}</option>
-        </select><br>
+        </select>
 
-        <input class="join-form-input" type="number" id="age" name="age" required placeholder="{% trans %}Age{% endtrans %}"><br>
+        <input class="join-form-input" type="number" id="age" name="age" required placeholder="{% trans %}Age{% endtrans %}">
 
-        <input class="join-form-input" type="email" id="email" name="email" required placeholder="{% trans %}Email{% endtrans %}"><br>
+        <input class="join-form-input" type="email" id="email" name="email" required placeholder="{% trans %}Email{% endtrans %}">
 
-        <input class="join-form-input" type="number" id="phone" name="phone" placeholder="{% trans %}Phone{% endtrans %}"><br>
+        <input class="join-form-input" type="number" id="phone" name="phone" placeholder="{% trans %}Phone{% endtrans %}">
 
-        <input class="join-form-input" type="text" id="telegram" name="telegram" placeholder="{% trans %}Telegram{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="telegram" name="telegram" placeholder="{% trans %}Telegram{% endtrans %}">
 
-        <input class="join-form-input" type="text" id="vkontakte" name="vkontakte" placeholder="{% trans %}Vkontakte{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="vkontakte" name="vkontakte" placeholder="{% trans %}Vkontakte{% endtrans %}">
 
-        <input class="join-form-input" type="text" id="facebook" name="facebook" placeholder="{% trans %}Facebook{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="facebook" name="facebook" placeholder="{% trans %}Facebook{% endtrans %}">
 
-        <input class="join-form-input" type="text" id="country" name="country" required placeholder="{% trans %}Country{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="country" name="country" required placeholder="{% trans %}Country{% endtrans %}">
 
         <select class="join-form-input" name="russia-region" id="russia-region">
             <option value="" disabled selected>{% trans %}Russia region{% endtrans %}</option>
@@ -136,21 +136,21 @@
             <option value="10489">Иные территории, включая город и космодром Байконур</option>
             <option value="10490">Республика Крым</option>
             <option value="10491">Севастополь</option>
-        </select><br>
+        </select>
 
-        <input class="join-form-input" type="text" id="city" name="city" placeholder="{% trans %}City{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="city" name="city" placeholder="{% trans %}City{% endtrans %}">
 
-        <input class="join-form-input" type="text" id="metro-station" name="metro-station" placeholder="{% trans %}Metro station{% endtrans %}"><br>
+        <input class="join-form-input" type="text" id="metro-station" name="metro-station" placeholder="{% trans %}Metro station{% endtrans %}">
         <div>
             <input type="checkbox" id="browser-data" name="browserData" value="1">
             <label for="browser-data">
                 {% trans %}Include data about your browser environment(browser type, page URL, screen resolution). It will allow us to better understand your inquiry.{% endtrans %}
             </label>
         </div>
-        <br><br>
+
 
         <input type="submit" value="{% trans %}Submit{% endtrans %}">
-        <br>
+
     </form>
     {% else %}
     <p>{% trans %}Please note that at present we only accept Russian-speaking applicants.{% endtrans %}</p>

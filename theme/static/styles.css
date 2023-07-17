@@ -674,6 +674,7 @@ footer {
     border-radius: 10px;
     padding-left: 10px;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 select.join-form-input {
@@ -686,7 +687,7 @@ select.join-form-input {
 
 .join-form-wrapper form {
     width: 300px;
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -701,6 +702,8 @@ select.join-form-input {
     font-size: 16px;
     width: 150px;
     cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
