@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-15 17:28+0200\n"
+"POT-Creation-Date: 2023-07-17 22:37+0200\n"
 "PO-Revision-Date: 2023-06-02 15:43+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: templates/404.html:4
 msgid "Page not found"
@@ -91,7 +91,7 @@ msgstr ""
 msgid "Courses"
 msgstr ""
 
-#: templates/base.html:40 templates/join.html:4
+#: templates/base.html:40 templates/join.html:4 templates/join.html:15
 msgid "Join"
 msgstr ""
 
@@ -105,55 +105,109 @@ msgstr ""
 msgid "All categories in"
 msgstr ""
 
-#: templates/index.html:55 templates/index.html:57
+#: templates/index.html:57 templates/index.html:59
 msgid "Previous Page"
 msgstr ""
 
-#: templates/index.html:60 templates/index.html:62
+#: templates/index.html:62 templates/index.html:64
 msgid "Next Page"
 msgstr ""
 
-#: templates/join.html:8 templates/join.html:14
+#: templates/join.html:8
 msgid "Fill this form to join the Union of marxists!"
 msgstr ""
 
-#: templates/join.html:22
-msgid "Join as:"
+#: templates/join.html:18
+msgid "Join as"
 msgstr ""
 
-#: templates/join.html:24
+#: templates/join.html:19
 msgid "Supporter"
 msgstr ""
 
-#: templates/join.html:26
+#: templates/join.html:20
 msgid "Candidate member"
 msgstr ""
 
-#: templates/join.html:27
-msgid "First name:"
+#: templates/join.html:23
+msgid "First name"
 msgstr ""
 
-#: templates/join.html:29
-msgid "Last name:"
+#: templates/join.html:25
+msgid "Last name"
+msgstr ""
+
+#: templates/join.html:27
+msgid "Nickname"
+msgstr ""
+
+#: templates/join.html:30
+msgid "Gender"
 msgstr ""
 
 #: templates/join.html:31
-msgid "Email:"
+msgid "Not specified"
+msgstr ""
+
+#: templates/join.html:32
+msgid "Female"
 msgstr ""
 
 #: templates/join.html:33
-msgid "Phone:"
+msgid "Male"
 msgstr ""
 
-#: templates/join.html:35
-msgid "Telegram handle:"
+#: templates/join.html:36
+msgid "Age"
 msgstr ""
 
-#: templates/join.html:37
-msgid "Submit"
+#: templates/join.html:38
+msgid "Email"
 msgstr ""
 
 #: templates/join.html:40
+msgid "Phone"
+msgstr ""
+
+#: templates/join.html:42
+msgid "Telegram"
+msgstr ""
+
+#: templates/join.html:44
+msgid "Vkontakte"
+msgstr ""
+
+#: templates/join.html:46
+msgid "Facebook"
+msgstr ""
+
+#: templates/join.html:48
+msgid "Country"
+msgstr ""
+
+#: templates/join.html:51
+msgid "Russia region"
+msgstr ""
+
+#: templates/join.html:141
+msgid "City"
+msgstr ""
+
+#: templates/join.html:143
+msgid "Metro station"
+msgstr ""
+
+#: templates/join.html:147
+msgid ""
+"Include data about your browser environment(browser type, page URL, "
+"screen resolution). It will allow us to better understand your inquiry."
+msgstr ""
+
+#: templates/join.html:152
+msgid "Submit"
+msgstr ""
+
+#: templates/join.html:156
 msgid "Please note that at present we only accept Russian-speaking applicants."
 msgstr ""
 
@@ -168,4 +222,74 @@ msgstr ""
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "All tags used by"
 msgstr ""
+
+#~ msgid "Telegram handle:"
+#~ msgstr ""
+
+#~ msgid "Not specified"
+#~ msgstr ""
+
+#~ msgid "Not specifie"
+#~ msgstr ""
+
+#~ msgid "Search"
+#~ msgstr ""
+
+#~ msgid "Join as:"
+#~ msgstr ""
+
+#~ msgid "Last name:"
+#~ msgstr ""
+
+#~ msgid "Nickname:"
+#~ msgstr ""
+
+#~ msgid "Gender:"
+#~ msgstr ""
+
+#~ msgid "Age:"
+#~ msgstr ""
+
+#~ msgid "Email:"
+#~ msgstr ""
+
+#~ msgid "Phone:"
+#~ msgstr ""
+
+#~ msgid "Telegram:"
+#~ msgstr ""
+
+#~ msgid "Vkontakte:"
+#~ msgstr ""
+
+#~ msgid "Facebook:"
+#~ msgstr ""
+
+#~ msgid "Country:"
+#~ msgstr ""
+
+#~ msgid "Russia region:"
+#~ msgstr ""
+
+#~ msgid "City:"
+#~ msgstr ""
+
+#~ msgid "Metro station:"
+#~ msgstr ""
+
+#~ msgid "First name:"
+#~ msgstr ""
+
+#~ msgid "Latest news"
+#~ msgstr ""
+
+#~ msgid "Show all news"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Include data about your browser "
+#~ "environment(browser type, page URL, screen "
+#~ "resolution). It will allow us to "
+#~ "better understand your inquiry.."
+#~ msgstr ""
 
