@@ -67,7 +67,7 @@ PLUGINS = [
     "i18n_subsites",
     "extract_toc",
     "page_hierarchy",
-    "search"
+    # "search"
 ]
 
 # Localization
