@@ -199,10 +199,11 @@ h2 {
 
 .other-news {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(0px, 300px));
     grid-gap: 1.5%;
     width: 95vw;
     margin: 0 auto;
+    justify-content: center;
     max-width: 1800px;
     /*grid-auto-rows: minmax(6.25em, auto); !* Задаем минимальную высоту строк *!*/
 }
