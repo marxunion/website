@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-27 15:50+0200\n"
+"POT-Creation-Date: 2023-07-27 16:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,11 +104,11 @@ msgstr ""
 msgid "All categories in"
 msgstr ""
 
-#: templates/index.html:99 templates/index.html:101
+#: templates/index.html:55 templates/index.html:57
 msgid "Previous Page"
 msgstr ""
 
-#: templates/index.html:104 templates/index.html:106
+#: templates/index.html:60 templates/index.html:62
 msgid "Next Page"
 msgstr ""
 

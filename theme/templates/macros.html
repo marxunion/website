@@ -18,3 +18,18 @@
     </div>
 </div>
 {% endmacro %}
+
+{% macro article(article_object) %}
+<div class="article">
+    <a href="{{ SITEURL }}/{{ article_object.url }}">
+        <img src="{{ article_object.cover }}" alt="{{ article_object.title }}">
+    </a>
+    <div>
+        <a href="{{ SITEURL }}/{{ article_object.url }}">
+            <h3>{{ article_object.title }}</h3>
+        </a>
+        <p>{{ article_object.summary }}</p>
+        <time datetime="{{ article_object.date }}">{{ article_object.locale_date }}</time>
+    </div>
+</div>
+{% endmacro %}
