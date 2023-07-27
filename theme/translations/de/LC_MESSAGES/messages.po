@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-24 15:38+0200\n"
+"POT-Creation-Date: 2023-07-27 16:50+0200\n"
 "PO-Revision-Date: 2023-06-02 15:43+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -75,7 +75,7 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: templates/base.html:37
+#: templates/base.html:37 templates/documents.html:5
 msgid "Documents"
 msgstr ""
 
@@ -105,16 +105,20 @@ msgstr ""
 msgid "All categories in"
 msgstr ""
 
-#: templates/index.html:57 templates/index.html:59
+#: templates/documents.html:9
+msgid "The statutes of"
+msgstr ""
+
+#: templates/index.html:56 templates/index.html:58
 msgid "Previous Page"
 msgstr ""
 
-#: templates/index.html:62 templates/index.html:64
+#: templates/index.html:61 templates/index.html:63
 msgid "Next Page"
 msgstr ""
 
 #: templates/join.html:8
-msgid "Fill this form to join the Union of marxists!"
+msgid "Fill this form to join the"
 msgstr ""
 
 #: templates/join.html:17
@@ -293,5 +297,8 @@ msgstr ""
 #~ "environment(browser type, page URL, screen "
 #~ "resolution). It will allow us to "
 #~ "better understand your inquiry."
+#~ msgstr ""
+
+#~ msgid "Fill this form to join the Union of marxists!"
 #~ msgstr ""
 

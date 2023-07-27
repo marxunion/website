@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import card with context %}
+
+{% block title %}
+{% trans %}Documents{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}The statutes of{% endtrans %} {{ SITENAME|striptags|e }}
+{% endblock head_description %}
+
+{% block content %}
+<section class="cards">
+    {{ card(pages|get("manifesto")) }}
+    {{ card(pages|get("orgprinciples")) }}
+</section>
+{% endblock content %}

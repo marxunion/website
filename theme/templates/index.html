@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% from 'macros.html' import card with context %}
 
 {% block title %}
 {{ super() }}
@@ -26,29 +27,27 @@
 <main>
     {# Featured article #}
     {% if articles_page.object_list and not articles_page.has_previous() %}
-    {% set article = articles_page.object_list[0] %}
+    {% set main_article_object = articles_page.object_list[0] %}
     <section class="main-news">
         <div class="image-wrapper">
-            <a href="{{ SITEURL }}/{{ article.url }}"><img src="{{ article.cover }}" alt="{{ article.title }}"></a>
+            <a href="{{ SITEURL }}/{{ main_article_object.url }}"><img src="{{ main_article_object.cover }}" alt="{{ main_article_object.title }}"></a>
         </div>
         <div class="news-overlay">
-            <a href="{{ SITEURL }}/{{ article.url }}"><h1>{{ article.title }}</h1></a>
-            <p>{{ article.summary }}</p>
+            <a href="{{ SITEURL }}/{{ main_article_object.url }}"><h1>{{ main_article_object.title }}</h1></a>
+            <p>{{ main_article_object.summary }}</p>
         </div>
     </section>
     {% endif %}
 
     {# Other articles #}
-    <section class="other-news">
+    <section class="cards">
     {% set begin = 0 if articles_page.has_previous() else 1 %}
     {% if articles_page.object_list|length > begin %}
-    {% for article in articles_page.object_list[begin:] %}
-        <div class="news-block">
-            <a href="{{ SITEURL }}/{{ article.url }}"><img src="{{ article.cover }}" alt="{{ article.title }}"></a>
-            <a href="{{ SITEURL }}/{{ article.url }}"><h3>{{ article.title }}</h3></a>
-            <p>{{ article.summary }}</p>
-            <time datetime="{{ article.date }}">{{ article.locale_date }}</time>
-        </div>
+    {% for article_object in articles_page.object_list[begin:] %}
+        {{ card(article_object) }}
+        {{ card(article_object) }}
+        {{ card(article_object) }}
+        {{ card(article_object) }}
     {% endfor %}
     {% endif %}
     </section>

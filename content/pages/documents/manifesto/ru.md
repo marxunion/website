@@ -1,6 +1,10 @@
 title: Манифест «Союза марксистов»
 slug: manifesto
 lang: ru
+date: 2019-11-03
+modified: 2020-02-15
+summary: Воззвание к широким массам, кратко описывающее требования, цели и взгляд на ситуацию Союза марксистов.
+cover: /content/pages/documents/manifesto/cover.jpg
 
 [TOC]
 
