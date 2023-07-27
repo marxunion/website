@@ -3,6 +3,12 @@ from __future__ import unicode_literals
 import datetime
 
 
+def get_by_slug(objs, slug):
+    for obj in objs:
+        if obj.slug == slug:
+            return obj
+
+
 SITENAME = "Союз марксистов"
 SITESUBTITLE = ""
 AUTHOR = SITENAME
@@ -24,7 +30,15 @@ DEFAULT_DATE = "fs"
 # PHOTO_EXIF_REMOVE_GPS = True
 # PHOTO_EXIF_COPYRIGHT = "CREATIVE COMMONS"
 
-DIRECT_TEMPLATES = ["index", "join", "tags", "categories", "archives", "404"]
+DIRECT_TEMPLATES = [
+    "index",
+    "join",
+    "documents",
+    "tags",
+    "categories",
+    "archives",
+    "404"]
+
 PAGINATED_TEMPLATES = {"index": 2}
 INDEX_SAVE_AS = 'index.html'
 OUTPUT_PATH = 'output'
@@ -69,6 +83,10 @@ PLUGINS = [
     "page_hierarchy",
     # "search"
 ]
+
+JINJA_FILTERS = {
+    "get": get_by_slug,
+}
 
 # Localization
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}

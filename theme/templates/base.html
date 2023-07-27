@@ -34,7 +34,7 @@
         <nav>
             <ul class="menu-items-list">
                 <li><a href="{{ SITEURL }}">{% trans %}News{% endtrans %}</a></li>
-                <li><a href="#">{% trans %}Documents{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}/documents.html">{% trans %}Documents{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Positions{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Campaigns{% endtrans %}</a></li>
                 <li><a href="#">{% trans %}Courses{% endtrans %}</a></li>
@@ -43,9 +43,7 @@
             {{ langlist('mobile') }}
         </nav>
     </div>
-    <div class="mobile-background">
-
-    </div>
+    <div class="mobile-background"></div>
     <div class="stork-wrapper">
         <div class="stork-input-wrapper">
             <input data-stork="site-search" class="stork-input" />
