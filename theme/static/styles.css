@@ -158,7 +158,6 @@ ul.breadcrumb li a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     justify-content: space-between;
-    margin-top: 30px;
     margin-bottom: 40px;
 }
 
@@ -345,6 +344,7 @@ footer {
     display: flex;
     margin-top: 50px;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .section-header {
