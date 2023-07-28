@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-27 16:50+0200\n"
+"POT-Creation-Date: 2023-07-28 09:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: templates/404.html:4
 msgid "Page not found"
@@ -70,7 +70,7 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: templates/base.html:36
+#: templates/base.html:36 templates/index.html:30
 msgid "News"
 msgstr ""
 
@@ -108,11 +108,11 @@ msgstr ""
 msgid "The statutes of"
 msgstr ""
 
-#: templates/index.html:56 templates/index.html:58
+#: templates/index.html:68 templates/index.html:70
 msgid "Previous Page"
 msgstr ""
 
-#: templates/index.html:61 templates/index.html:63
+#: templates/index.html:73 templates/index.html:75
 msgid "Next Page"
 msgstr ""
 

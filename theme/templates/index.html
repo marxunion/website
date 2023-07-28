@@ -24,44 +24,57 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-<main>
-    {# Featured article #}
-    {% if articles_page.object_list and not articles_page.has_previous() %}
-    {% set main_article_object = articles_page.object_list[0] %}
-    <section class="main-news">
-        <div class="image-wrapper">
-            <a href="{{ SITEURL }}/{{ main_article_object.url }}"><img src="{{ main_article_object.cover }}" alt="{{ main_article_object.title }}"></a>
+<main class="section-wrapper">
+    <div class="section">
+        <div class="section-header-wrapper">
+            <div class="section-header">{% trans %}News{% endtrans %}</div>
+            <div class="section-header-rectangle"></div>
         </div>
-        <div class="news-overlay">
-            <a href="{{ SITEURL }}/{{ main_article_object.url }}"><h1>{{ main_article_object.title }}</h1></a>
-            <p>{{ main_article_object.summary }}</p>
-        </div>
-    </section>
-    {% endif %}
+        {# Main article #}
+        {% if articles_page.object_list and not articles_page.has_previous() %}
+        {% set main_article_object = articles_page.object_list[0] %}
+        <section class="main-news">
+            <div class="main-news-text">
+                <div></div>
+                <div>
+                    <a href="{{ SITEURL }}/{{ main_article_object.url }}">
+                        <h1>{{ main_article_object.title }}</h1>
+                    </a>
+                </div>
+                <div class="main-news-summary-wrapper">
+                    <p>{{ main_article_object.summary }}</p>
+                </div>
+            </div>
+            <div class="main-news-image-wrapper">
+                <a href="{{ SITEURL }}/{{ main_article_object.url }}"><img src="{{ main_article_object.cover }}" alt="{{ main_article_object.title }}"></a>
+            </div>
+        </section>
+        {% endif %}
 
-    {# Other articles #}
-    <section class="cards">
-    {% set begin = 0 if articles_page.has_previous() else 1 %}
-    {% if articles_page.object_list|length > begin %}
-    {% for article_object in articles_page.object_list[begin:] %}
-        {{ card(article_object) }}
-        {{ card(article_object) }}
-        {{ card(article_object) }}
-        {{ card(article_object) }}
-    {% endfor %}
-    {% endif %}
-    </section>
-    <ul class="actions pagination">
-        {% if articles_page.has_previous() %}
-        <li><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Previous Page{% endtrans %}</a></li>
-        {% else %}
-        <li><a class="disabled button large previous">{% trans %}Previous Page{% endtrans %}</a></li>
+        {# Other articles #}
+        <section class="cards">
+        {% set begin = 0 if articles_page.has_previous() else 1 %}
+        {% if articles_page.object_list|length > begin %}
+        {% for article_object in articles_page.object_list[begin:] %}
+            {{ card(article_object) }}
+            {{ card(article_object) }}
+            {{ card(article_object) }}
+            {{ card(article_object) }}
+        {% endfor %}
         {% endif %}
-        {% if articles_page.has_next() %}
-        <li><a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Next Page{% endtrans %}</a></li>
-        {% else %}
-        <li><a class="disabled button large next">{% trans %}Next Page{% endtrans %}</a></li>
-        {% endif %}
-    </ul>
-    </main>
+        </section>
+        <ul class="actions pagination">
+            {% if articles_page.has_previous() %}
+            <li><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Previous Page{% endtrans %}</a></li>
+            {% else %}
+            <li><a class="disabled button large previous">{% trans %}Previous Page{% endtrans %}</a></li>
+            {% endif %}
+            {% if articles_page.has_next() %}
+            <li><a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Next Page{% endtrans %}</a></li>
+            {% else %}
+            <li><a class="disabled button large next">{% trans %}Next Page{% endtrans %}</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</main>
 {% endblock content %}
