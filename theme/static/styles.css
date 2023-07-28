@@ -158,7 +158,6 @@ ul.breadcrumb li a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     justify-content: space-between;
-    margin-top: 30px;
     margin-bottom: 40px;
 }
 
@@ -208,10 +207,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0px, 300px));
     grid-gap: 10px;
-    width: inherit;
-    justify-content: space-between;
-    max-width: inherit;
-    /*grid-auto-rows: minmax(6.25em, auto); !* Задаем минимальную высоту строк *!*/
 }
 
 .news-header {
@@ -349,6 +344,7 @@ footer {
     display: flex;
     margin-top: 50px;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .section-header {
