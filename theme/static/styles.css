@@ -208,10 +208,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0px, 300px));
     grid-gap: 10px;
-    width: inherit;
-    justify-content: space-between;
-    max-width: inherit;
-    /*grid-auto-rows: minmax(6.25em, auto); !* Задаем минимальную высоту строк *!*/
 }
 
 .news-header {
