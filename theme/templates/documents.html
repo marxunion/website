@@ -10,8 +10,16 @@
 {% endblock head_description %}
 
 {% block content %}
-<section class="cards">
-    {{ card(pages|get("manifesto")) }}
-    {{ card(pages|get("orgprinciples")) }}
-</section>
+<main class="section-wrapper">
+    <div class="section">
+        <div class="section-header-wrapper">
+            <div class="section-header">{% trans %}Documents{% endtrans %}</div>
+            <div class="section-header-rectangle"></div>
+        </div>
+        <section class="cards">
+            {{ card(pages|get("manifesto")) }}
+            {{ card(pages|get("orgprinciples")) }}
+        </section>
+    </div>
+</main>
 {% endblock content %}
