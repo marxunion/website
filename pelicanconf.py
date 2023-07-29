@@ -92,7 +92,7 @@ JINJA_FILTERS = {
 
 # Localization
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-I18N_TEMPLATES_LANG = 'en'
+I18N_TEMPLATES_LANG = 'ru'
 # mapping: language_code -> settings_overrides_dict
 I18N_SUBSITES = {
     'en': {

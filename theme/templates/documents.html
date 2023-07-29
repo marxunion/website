@@ -2,18 +2,18 @@
 {% from 'macros.html' import card with context %}
 
 {% block title %}
-{% trans %}Documents{% endtrans %} · {{ super() }}
+{% trans %}Документы{% endtrans %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-{% trans %}The statutes of{% endtrans %} {{ SITENAME|striptags|e }}
+{% trans %}Уставные документы{% endtrans %} {{ SITENAME|striptags|e }}
 {% endblock head_description %}
 
 {% block content %}
 <main class="section-wrapper">
     <div class="section">
         <div class="section-header-wrapper">
-            <div class="section-header">{% trans %}Documents{% endtrans %}</div>
+            <div class="section-header">{% trans %}Документы{% endtrans %}</div>
             <div class="section-header-rectangle"></div>
         </div>
         <section class="cards">

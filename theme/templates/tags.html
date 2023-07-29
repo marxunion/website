@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 
 {% block title %}
-{% trans %}All tags{% endtrans %} · {{ super() }}
+{% trans %}Все теги{% endtrans %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-{% trans %}All tags used by{% endtrans %} {{ SITENAME|striptags|e }}.
+{% trans %}Все теги, используемые в{% endtrans %} {{ SITENAME|striptags|e }}.
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
 {{ super() }}
-<meta property="og:title" content="{% trans %}All tags{% endtrans %} · {{ SITENAME|striptags|e }}"/>
-<meta name="twitter:title" content="{% trans %}All tags{% endtrans %} · {{ SITENAME|striptags|e }}">
+<meta property="og:title" content="{% trans %}Все теги{% endtrans %} · {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="{% trans %}Все теги{% endtrans %} · {{ SITENAME|striptags|e }}">
 <meta property="og:url" content="{{ SITEURL }}/{{ TAGS_URL }}" />
-<meta property="og:description" content="{% trans %}All tags used by{% endtrans %} {{ SITENAME|striptags|e }}" />
-<meta name="twitter:description" content="{% trans %}All tags used by{% endtrans %} {{ SITENAME|striptags|e }}">
+<meta property="og:description" content="{% trans %}Все теги, используемые в{% endtrans %} {{ SITENAME|striptags|e }}" />
+<meta name="twitter:description" content="{% trans %}Все теги, используемые в{% endtrans %} {{ SITENAME|striptags|e }}">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}

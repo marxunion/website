@@ -27,7 +27,7 @@
 <main class="section-wrapper">
     <div class="section">
         <div class="section-header-wrapper">
-            <div class="section-header">{% trans %}News{% endtrans %}</div>
+            <div class="section-header">{% trans %}Новости{% endtrans %}</div>
             <div class="section-header-rectangle"></div>
         </div>
         {# Main article #}
@@ -65,14 +65,14 @@
         </section>
         <ul class="actions pagination">
             {% if articles_page.has_previous() %}
-            <li><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Previous Page{% endtrans %}</a></li>
+            <li><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Предыдущая страница{% endtrans %}</a></li>
             {% else %}
-            <li><a class="disabled button large previous">{% trans %}Previous Page{% endtrans %}</a></li>
+            <li><a class="disabled button large previous">{% trans %}Предыдущая страница{% endtrans %}</a></li>
             {% endif %}
             {% if articles_page.has_next() %}
-            <li><a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Next Page{% endtrans %}</a></li>
+            <li><a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Следующая страница{% endtrans %}</a></li>
             {% else %}
-            <li><a class="disabled button large next">{% trans %}Next Page{% endtrans %}</a></li>
+            <li><a class="disabled button large next">{% trans %}Следующая страница{% endtrans %}</a></li>
             {% endif %}
         </ul>
     </div>

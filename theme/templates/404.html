@@ -1,23 +1,23 @@
 {% extends 'base.html' %}
 
 {% block title %}
-{% trans %}Page not found{% endtrans %} · {{ super() }}
+{% trans %}Страница не найдена{% endtrans %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-{% trans %}That page doesn't exist in{% endtrans %} {{ SITENAME|striptags|e }}
+{% trans %}Такой страницы не существует в{% endtrans %} {{ SITENAME|striptags|e }}
 {% endblock head_description %}
 
 {% block content %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1>{% trans %}That page doesn't exist!{% endtrans %}</h1>
+    <h1>{% trans %}Такой страницы не существует!{% endtrans %}</h1>
     </header>
 </div>
 
 <div class="row-fluid">
     <div class="span8 offset2">
-        <p>{% trans %}Sorry, but the page you are looking for cannot be found. It seems that the page you were trying to reach doesn't exist, or may be it has just moved, or it no longer exists.{% endtrans %}</p>
+        <p>{% trans %}Увы, запрашиваемая вами страница не найдена. Она либо никогда не существовала, либо была перенесена или удалена.{% endtrans %}</p>
     </div>
 </div>
 {% endblock content %}
