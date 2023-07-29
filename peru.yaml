@@ -3,6 +3,7 @@ imports:
     plugins|extract_toc: plugins/
     search|search: plugins/
     hierarchy: plugins/page_hierarchy/
+    cover|cover: plugins/
 
 
 git module plugins:
@@ -22,3 +23,9 @@ rule search:
 
 git module hierarchy:
     url: https://github.com/akhayyat/pelican-page-hierarchy.git
+
+git module cover:
+    url: https://github.com/marxunion/cover-image.git
+
+rule cover:
+    export: pelican/plugins

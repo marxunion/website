@@ -37,7 +37,8 @@ DIRECT_TEMPLATES = [
     "tags",
     "categories",
     "archives",
-    "404"]
+    "404"
+]
 
 PAGINATED_TEMPLATES = {"index": 2}
 INDEX_SAVE_AS = 'index.html'
@@ -81,6 +82,7 @@ PLUGINS = [
     "i18n_subsites",
     "extract_toc",
     "page_hierarchy",
+    "cover_image",
     # "search"
 ]
 

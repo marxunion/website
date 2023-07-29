@@ -4,7 +4,6 @@ lang: en
 date: 2019-11-03
 modified: 2020-02-15
 summary: A proclamation to the broad masses summarizing the demands, aims and outlook of the Union of marxists.
-cover: /content/pages/documents/manifesto/cover.jpg
 
 [TOC]
 
