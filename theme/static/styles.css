@@ -839,7 +839,7 @@ article p {
     margin-top: 20px;
 }
 
-article em {
+article img + em {
     margin-bottom: 20px;
     margin-top: 10px;
     display: block;
@@ -874,6 +874,54 @@ article ol {
     margin-bottom: 20px;
 }
 
+article nav ul {
+    display: block;
+}
+
+article nav ul li a:hover {
+    color: black;
+}
+
+article nav ul li a {
+    color: black;
+}
+
+article nav ul li:first-child a {
+    color: black;
+}
+
+article h2 a {
+    display: none;
+}
+
+article h3 a {
+    display: none;
+}
+
+article h4 a {
+    display: none;
+}
+
+article h5 a {
+    display: none;
+}
+
+article h2 {
+    margin-top: 20px;
+}
+
+article h3 {
+    margin-top: 20px;
+}
+
+article h4 {
+    margin-top: 20px;
+}
+
+article h5 {
+    margin-top: 20px;
+}
+
 @media (max-width: 800px) {
     article {
         margin: 0 20px 0 20px;
@@ -896,5 +944,17 @@ article ol {
 
     .article-content p:first-child {
         order: -1;
+    }
+
+    article nav ul li {
+        border-bottom: none;
+    }
+
+    article nav ul li a {
+        margin-left: 0;
+    }
+
+    article nav ul {
+        margin-top: 10px;
     }
 }
