@@ -50,6 +50,8 @@
         <div class="span8 offset2 article-content">
             {% endif %}
             {% from 'macros.html' import translations with context %}
+            <img alt="" src="{{ article.cover }}">
+            <h1>{{ article.title }}</h1>
             {{ translations(article) }}
             {{ article.content }}
 
