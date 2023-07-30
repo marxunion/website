@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-30 17:01+0200\n"
+"POT-Creation-Date: 2023-07-30 21:25+0200\n"
 "PO-Revision-Date: 2023-06-02 15:43+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -91,7 +91,9 @@ msgstr ""
 msgid "Курсы"
 msgstr ""
 
-#: templates/base.html:41 templates/join.html:4 templates/join.html:15
+#: templates/base.html:41 templates/join.html:4 templates/join.html:14
+#: templates/join_error.html:4 templates/join_fail.html:4
+#: templates/join_success.html:4
 msgid "Вступить"
 msgstr ""
 
@@ -121,48 +123,99 @@ msgstr ""
 msgid "Заполните эту форму, чтобы присоединиться к Союзу марксистов!"
 msgstr ""
 
-#: templates/join.html:17
+#: templates/join.html:16
 msgid "Как нам к тебе обращаться?"
 msgstr ""
 
-#: templates/join.html:19
+#: templates/join.html:18
 msgid "Гендер"
 msgstr ""
 
-#: templates/join.html:20
+#: templates/join.html:19
 msgid "Не указывать"
 msgstr ""
 
-#: templates/join.html:21
+#: templates/join.html:20
 msgid "Женский"
 msgstr ""
 
-#: templates/join.html:22
+#: templates/join.html:21
 msgid "Мужской"
 msgstr ""
 
-#: templates/join.html:24
+#: templates/join.html:23
 msgid "Возраст"
 msgstr ""
 
-#: templates/join.html:25
+#: templates/join.html:24
 msgid "Номер телефона"
 msgstr ""
 
-#: templates/join.html:26
+#: templates/join.html:25
 msgid "Имя в Telegram"
 msgstr ""
 
-#: templates/join.html:27
+#: templates/join.html:26
 msgid "Город (+ страна, если это не РФ)"
 msgstr ""
 
-#: templates/join.html:28
+#: templates/join.html:27
 msgid "Отправить"
 msgstr ""
 
-#: templates/join.html:31
+#: templates/join.html:30
 msgid "В данный момент мы принимаем только русскоговорящих членов."
+msgstr ""
+
+#: templates/join_error.html:8 templates/join_fail.html:8
+msgid "Не удалось отправить заявку на вступление в Союз марксистов..."
+msgstr ""
+
+#: templates/join_error.html:14
+msgid ""
+"По какой-то причине отправить вашу заявку в Союз марксистов не удалось. "
+"Скорее всего, это связано с внутренними проблемами в системах СМ, и "
+"ответственные люди уже об этом знают. Пожалуйста, попробуйте заполнить "
+"форму снова через некоторое время."
+msgstr ""
+
+#: templates/join_error.html:15
+msgid "А пока можно вернуться на"
+msgstr ""
+
+#: templates/join_error.html:15
+msgid "главную страницу"
+msgstr ""
+
+#: templates/join_fail.html:14
+msgid "Я не знаю, как, но тебе удалось заполнить форму неправильно."
+msgstr ""
+
+#: templates/join_fail.html:15
+msgid "Попробуй еще раз"
+msgstr ""
+
+#: templates/join_success.html:8
+msgid "Заявка на вступление в Союз марксистов успешно отправлена!"
+msgstr ""
+
+#: templates/join_success.html:14
+msgid ""
+"Поздравляем, заявка успешно отправлена! Через какое-то время (будем "
+"надеяться, что недолгое) с вами через Telegram свяжутся представители "
+"Союза марксистов."
+msgstr ""
+
+#: templates/join_success.html:15
+msgid "А до тех пор настоятельно рекомендуем ознакомиться с"
+msgstr ""
+
+#: templates/join_success.html:15
+msgid "уставными документами организации"
+msgstr ""
+
+#: templates/join_success.html:15
+msgid "(это все равно придется сделать)"
 msgstr ""
 
 #: templates/macros.html:3

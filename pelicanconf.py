@@ -33,6 +33,9 @@ DEFAULT_DATE = "fs"
 DIRECT_TEMPLATES = [
     "index",
     "join",
+    "join_success",
+    "join_fail",
+    "join_error",
     "documents",
     "tags",
     "categories",
