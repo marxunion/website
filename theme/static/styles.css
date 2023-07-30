@@ -284,28 +284,44 @@ h2, .all-news-link {
     display: none;
 }
 
+.footer-wrapper {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+}
+
 /* Подвал */
 footer {
-    border-top: 1px solid #808080;
-    width: 95vw;
-    padding: 1em 0;
-    margin: 0 auto;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    background-color: white;
+    max-width: 1500px;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
 }
 
 .social-icons {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 33%;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
 }
 
 .social-icons img {
-    padding-right: 1.875em;
-    width: 3.5rem;
+    margin-right: 30px;
+    width: 28px;
+}
+
+@media(max-width: 1000px) {
+    .social-icons img {
+        margin-right: 20px;
+        width: 28px;
+    }
 }
 
 .social-icons img:hover {
@@ -351,6 +367,7 @@ footer {
 .section {
     max-width: 1500px;
     width: 95vw;
+    margin-bottom: 150px;
 }
 
 .section-header-wrapper {
@@ -584,20 +601,31 @@ footer {
         text-align: left;
     }
 
+    .footer-wrapper {
+        background-color: white;
+        height: 100px;
+        bottom: 0;
+    }
+
     footer {
-        width: 84vw;
+        width: 90vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100px;
     }
 
     .social-icons {
-        display: flex;
-        justify-content: center;
-        margin-left: 1.875em;
-        margin-bottom: 1.5em;
-        margin-top: 1em;
+        position: relative;
+        margin-left: 0;
+        width: 80vw;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .social-icons img {
+        margin-right: 0;
     }
 
     .footer-logo {
@@ -803,6 +831,7 @@ article {
     max-width: 750px;
     margin: 0 auto;
     margin-top: 40px;
+    padding-bottom: 150px;
 }
 
 article header {
