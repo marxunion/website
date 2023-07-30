@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-30 21:25+0200\n"
+"POT-Creation-Date: 2023-07-30 23:27+0200\n"
 "PO-Revision-Date: 2023-07-29 21:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: templates/404.html:4
 msgid "Страница не найдена"
@@ -175,7 +175,7 @@ msgstr "Please note that at present we only accept Russian-speaking applicants."
 msgid "Не удалось отправить заявку на вступление в Союз марксистов..."
 msgstr ""
 
-#: templates/join_error.html:14
+#: templates/join_error.html:13
 msgid ""
 "По какой-то причине отправить вашу заявку в Союз марксистов не удалось. "
 "Скорее всего, это связано с внутренними проблемами в системах СМ, и "
@@ -183,20 +183,20 @@ msgid ""
 "форму снова через некоторое время."
 msgstr ""
 
-#: templates/join_error.html:15
+#: templates/join_error.html:14
 msgid "А пока можно вернуться на"
 msgstr ""
 
-#: templates/join_error.html:15
+#: templates/join_error.html:14
 #, fuzzy
 msgid "главную страницу"
 msgstr "Next page"
 
-#: templates/join_fail.html:14
+#: templates/join_fail.html:13
 msgid "Я не знаю, как, но тебе удалось заполнить форму неправильно."
 msgstr ""
 
-#: templates/join_fail.html:15
+#: templates/join_fail.html:14
 msgid "Попробуй еще раз"
 msgstr ""
 
@@ -204,22 +204,22 @@ msgstr ""
 msgid "Заявка на вступление в Союз марксистов успешно отправлена!"
 msgstr ""
 
-#: templates/join_success.html:14
+#: templates/join_success.html:13
 msgid ""
 "Поздравляем, заявка успешно отправлена! Через какое-то время (будем "
 "надеяться, что недолгое) с вами через Telegram свяжутся представители "
 "Союза марксистов."
 msgstr ""
 
-#: templates/join_success.html:15
+#: templates/join_success.html:14
 msgid "А до тех пор настоятельно рекомендуем ознакомиться с"
 msgstr ""
 
-#: templates/join_success.html:15
+#: templates/join_success.html:14
 msgid "уставными документами организации"
 msgstr ""
 
-#: templates/join_success.html:15
+#: templates/join_success.html:14
 msgid "(это все равно придется сделать)"
 msgstr ""
 
