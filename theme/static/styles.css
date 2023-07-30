@@ -908,18 +908,22 @@ article h5 a {
 
 article h2 {
     margin-top: 20px;
+    font-size: 32px;
 }
 
 article h3 {
     margin-top: 20px;
+    font-size: 29px;
 }
 
 article h4 {
     margin-top: 20px;
+    font-size: 26px;
 }
 
 article h5 {
     margin-top: 20px;
+    font-size: 23px;
 }
 
 @media (max-width: 800px) {
@@ -927,7 +931,7 @@ article h5 {
         margin: 0 20px 0 20px;
     }
 
-    article h1 {
+    #_1 {
         border-left: none;
         font-size: 26px;
         padding-left: 0;
