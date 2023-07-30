@@ -113,10 +113,6 @@ nav ul li a:hover {
     color: rgba(255, 255, 255, 0.5);
 }
 
-nav ul li:first-child a {
-    color: rgba(255, 255, 255, 0.5);
-}
-
 /* Style the list */
 ul.breadcrumb {
     padding: 10px 16px;

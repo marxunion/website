@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-30 16:51+0200\n"
+"POT-Creation-Date: 2023-07-30 17:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: templates/404.html:4
 msgid "Страница не найдена"
@@ -49,23 +49,23 @@ msgstr ""
 msgid "Содержание"
 msgstr ""
 
-#: templates/article.html:79
+#: templates/article.html:81
 msgid "Предудущая статья"
 msgstr ""
 
-#: templates/article.html:88
+#: templates/article.html:90
 msgid "Следующая статья"
 msgstr ""
 
-#: templates/article.html:97
+#: templates/article.html:99
 msgid "Опубликовано"
 msgstr ""
 
-#: templates/article.html:102
+#: templates/article.html:104
 msgid "Категория"
 msgstr ""
 
-#: templates/article.html:106
+#: templates/article.html:108
 msgid "Теги"
 msgstr ""
 
