@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-31 15:05+0200\n"
+"POT-Creation-Date: 2023-07-31 18:06+0200\n"
 "PO-Revision-Date: 2023-07-29 21:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: templates/404.html:4
 msgid "Страница не найдена"
@@ -73,7 +73,7 @@ msgstr "Category"
 msgid "Теги"
 msgstr "Tags"
 
-#: templates/base.html:36 templates/index.html:30
+#: templates/base.html:36 templates/index.html:33
 msgid "Новости"
 msgstr "News"
 
@@ -96,6 +96,10 @@ msgstr "Courses"
 msgid "Вступить"
 msgstr "Join"
 
+#: templates/base.html:49
+msgid "Поиск"
+msgstr ""
+
 #: templates/categories.html:4 templates/categories.html:13
 #: templates/categories.html:14 templates/categories.html:33
 #, fuzzy
@@ -111,13 +115,15 @@ msgstr "All categories in"
 msgid "Уставные документы"
 msgstr "The statutes of"
 
-#: templates/index.html:68 templates/index.html:70
-msgid "Предыдущая страница"
+#: templates/index.html:75
+#, fuzzy
+msgid "Предыдущая"
 msgstr "Previous page"
 
-#: templates/index.html:73 templates/index.html:75
-msgid "Следующая страница"
-msgstr "Next page"
+#: templates/index.html:88
+#, fuzzy
+msgid "Следующая"
+msgstr "Next article"
 
 #: templates/join.html:8
 msgid "Заполните эту форму, чтобы присоединиться к Союзу марксистов!"
@@ -221,7 +227,7 @@ msgstr ""
 
 #: templates/macros.html:3
 msgid "Переводы"
-msgstr "Translations"
+msgstr ""
 
 #: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14
 msgid "Все теги"
@@ -230,4 +236,10 @@ msgstr "All tags"
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "Все теги, используемые в"
 msgstr "All tags used by"
+
+#~ msgid "Следующая страница"
+#~ msgstr "Next page"
+
+#~ msgid "Переводы"
+#~ msgstr "Translations"
 

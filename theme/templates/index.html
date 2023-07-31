@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
+
 {% from 'macros.html' import card with context %}
+{% from 'macros.html' import left_chevron with context %}
+{% from 'macros.html' import right_chevron with context %}
 
 {% block title %}
 {{ super() }}
@@ -63,18 +66,28 @@
         {% endfor %}
         {% endif %}
         </section>
-        <ul class="actions pagination">
-            {% if articles_page.has_previous() %}
-            <li><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Предыдущая страница{% endtrans %}</a></li>
-            {% else %}
-            <li><a class="disabled button large previous">{% trans %}Предыдущая страница{% endtrans %}</a></li>
-            {% endif %}
-            {% if articles_page.has_next() %}
-            <li><a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Следующая страница{% endtrans %}</a></li>
-            {% else %}
-            <li><a class="disabled button large next">{% trans %}Следующая страница{% endtrans %}</a></li>
-            {% endif %}
-        </ul>
+        <div class="pagination">
+            <a {% if articles_page.has_previous() %}
+               href="{{ SITEURL }}/{{ articles_previous_page.url }}"
+               {% else %}
+               class="disabled"
+               {% endif %}>
+                <div  class="button large previous">{% trans %}Предыдущая{% endtrans %}</div>
+                <div>
+                    {{ left_chevron() }}
+                </div>
+            </a>
+            <a {% if articles_page.has_next() %}
+               href="{{ SITEURL }}/{{ articles_next_page.url }}"
+               {% else %}
+               class="disabled"
+               {% endif %}>
+                <div>
+                    {{ right_chevron() }}
+                </div>
+                <div  class="button large next">{% trans %}Следующая{% endtrans %}</div>
+            </a>
+        </div>
     </div>
 </main>
 {% endblock content %}
