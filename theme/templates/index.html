@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
+
 {% from 'macros.html' import card with context %}
+{% from 'macros.html' import left_chevron with context %}
+{% from 'macros.html' import right_chevron with context %}
 
 {% block title %}
 {{ super() }}
@@ -63,18 +66,34 @@
         {% endfor %}
         {% endif %}
         </section>
-        <ul class="actions pagination">
-            {% if articles_page.has_previous() %}
-            <li><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Предыдущая страница{% endtrans %}</a></li>
-            {% else %}
-            <li><a class="disabled button large previous">{% trans %}Предыдущая страница{% endtrans %}</a></li>
-            {% endif %}
-            {% if articles_page.has_next() %}
-            <li><a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Следующая страница{% endtrans %}</a></li>
-            {% else %}
-            <li><a class="disabled button large next">{% trans %}Следующая страница{% endtrans %}</a></li>
-            {% endif %}
-        </ul>
+        <div class="pagination">
+            <div>
+                {% if articles_page.has_previous() %}
+                <a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Предыдущая{% endtrans %}</a>
+                <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">
+                    {{ left_chevron() }}
+                </a>
+                {% else %}
+                <a class="disabled button large previous">{% trans %}Предыдущая{% endtrans %}</a>
+                <a class="disabled">
+                    {{ left_chevron() }}
+                </a>
+                {% endif %}
+            </div>
+            <div>
+                {% if articles_page.has_next() %}
+                <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">
+                    {{ right_chevron() }}
+                </a>
+                <a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Следующая{% endtrans %}</a>
+                {% else %}
+                <a class="disabled">
+                    {{ right_chevron() }}
+                </a>
+                <a class="disabled button large next">{% trans %}Следующая{% endtrans %}</a>
+                {% endif %}
+            </div>
+        </div>
     </div>
 </main>
 {% endblock content %}
