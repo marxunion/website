@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-31 17:26+0200\n"
+"POT-Creation-Date: 2023-07-31 18:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,11 +110,11 @@ msgstr ""
 msgid "Уставные документы"
 msgstr ""
 
-#: templates/index.html:72 templates/index.html:77
+#: templates/index.html:75
 msgid "Предыдущая"
 msgstr ""
 
-#: templates/index.html:88 templates/index.html:93
+#: templates/index.html:88
 msgid "Следующая"
 msgstr ""
 

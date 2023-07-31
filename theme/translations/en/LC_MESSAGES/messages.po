@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-31 17:26+0200\n"
+"POT-Creation-Date: 2023-07-31 18:06+0200\n"
 "PO-Revision-Date: 2023-07-29 21:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -115,12 +115,12 @@ msgstr "All categories in"
 msgid "Уставные документы"
 msgstr "The statutes of"
 
-#: templates/index.html:72 templates/index.html:77
+#: templates/index.html:75
 #, fuzzy
 msgid "Предыдущая"
 msgstr "Previous page"
 
-#: templates/index.html:88 templates/index.html:93
+#: templates/index.html:88
 #, fuzzy
 msgid "Следующая"
 msgstr "Next article"

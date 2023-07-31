@@ -67,32 +67,26 @@
         {% endif %}
         </section>
         <div class="pagination">
-            <div>
-                {% if articles_page.has_previous() %}
-                <a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="button large previous">{% trans %}Предыдущая{% endtrans %}</a>
-                <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">
+            <a {% if articles_page.has_previous() %}
+               href="{{ SITEURL }}/{{ articles_previous_page.url }}"
+               {% else %}
+               class="disabled"
+               {% endif %}>
+                <div  class="button large previous">{% trans %}Предыдущая{% endtrans %}</div>
+                <div>
                     {{ left_chevron() }}
-                </a>
-                {% else %}
-                <a class="disabled button large previous">{% trans %}Предыдущая{% endtrans %}</a>
-                <a class="disabled">
-                    {{ left_chevron() }}
-                </a>
-                {% endif %}
-            </div>
-            <div>
-                {% if articles_page.has_next() %}
-                <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">
+                </div>
+            </a>
+            <a {% if articles_page.has_next() %}
+               href="{{ SITEURL }}/{{ articles_next_page.url }}"
+               {% else %}
+               class="disabled"
+               {% endif %}>
+                <div>
                     {{ right_chevron() }}
-                </a>
-                <a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="button large next">{% trans %}Следующая{% endtrans %}</a>
-                {% else %}
-                <a class="disabled">
-                    {{ right_chevron() }}
-                </a>
-                <a class="disabled button large next">{% trans %}Следующая{% endtrans %}</a>
-                {% endif %}
-            </div>
+                </div>
+                <div  class="button large next">{% trans %}Следующая{% endtrans %}</div>
+            </a>
         </div>
     </div>
 </main>
