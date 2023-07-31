@@ -104,12 +104,12 @@ I18N_SUBSITES = {
         'TIMEZONE': 'Europe/London',
         'OUTPUT_PATH': 'output/en'
     },
-    'de': {
-        'SITENAME': 'Marxunion',
-        'SITESUBTITLE': '',
-        'TIMEZONE': 'Europe/Berlin',
-        'OUTPUT_PATH': 'output/de'
-    }
+    # 'de': {
+    #     'SITENAME': 'Marxunion',
+    #     'SITESUBTITLE': '',
+    #     'TIMEZONE': 'Europe/Berlin',
+    #     'OUTPUT_PATH': 'output/de'
+    # }
 }
 
 MARKDOWN = {
