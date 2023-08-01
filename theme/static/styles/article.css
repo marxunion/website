@@ -1,0 +1,165 @@
+article {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+article header {
+    display: none;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+article a {
+    color: var(--sm-red);
+    cursor: pointer;
+}
+
+article h1 {
+    border-left: 10px solid var(--sm-red);
+    font-size: 36px;
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+article h1 a {
+    display: none;
+}
+
+article p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.article-content p:not(:first-child) img {
+    margin-top: 20px;
+}
+
+article img + em {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: block;
+    border-left: 2px solid var(--sm-red);
+    padding-left: 10px;
+    font-size: 16px;
+    color: var(--sm-gray);
+}
+
+article ul {
+    list-style: disc;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+article ol {
+    list-style: decimal;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+#article-sidebar h4:first-child {
+    display: none;
+}
+
+#article-sidebar time {
+    font-style: italic;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article nav ul {
+    display: block;
+}
+
+article nav ul li a:hover {
+    color: var(--sm-red);
+}
+
+article nav ul li a {
+    color: var(--sm-red);
+}
+
+article nav ul li:first-child a {
+    color: var(--sm-red);
+}
+
+article h2 a {
+    display: none;
+}
+
+article h3 a {
+    display: none;
+}
+
+article h4 a {
+    display: none;
+}
+
+article h5 a {
+    display: none;
+}
+
+article h2 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+article h3 {
+    margin-top: 20px;
+    font-size: 29px;
+}
+
+article h4 {
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+article h5 {
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+@media (max-width: 800px) {
+    article {
+        margin: 0 20px 0 20px;
+    }
+
+    #_1 {
+        border-left: none;
+        font-size: 26px;
+        padding-left: 0;
+        margin-top: 0;
+        line-height: 30px;
+        margin-bottom: 0;
+        order: -2;
+    }
+
+    .article-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-content p:first-child {
+        order: -1;
+    }
+
+    article nav ul li {
+        border-bottom: none;
+    }
+
+    article nav ul li a {
+        margin-left: 0;
+    }
+
+    article nav ul {
+        margin-top: 10px;
+    }
+}
