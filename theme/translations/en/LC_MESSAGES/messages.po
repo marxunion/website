@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-31 18:06+0200\n"
+"POT-Creation-Date: 2023-08-01 09:51+0200\n"
 "PO-Revision-Date: 2023-07-29 21:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -73,30 +73,30 @@ msgstr "Category"
 msgid "Теги"
 msgstr "Tags"
 
-#: templates/base.html:36 templates/index.html:33
+#: templates/base.html:48 templates/index.html:33
 msgid "Новости"
 msgstr "News"
 
-#: templates/base.html:37 templates/documents.html:5
+#: templates/base.html:49 templates/documents.html:5
 #: templates/documents.html:16
 msgid "Документы"
 msgstr "Documents"
 
-#: templates/base.html:39
+#: templates/base.html:51
 msgid "Кампании"
 msgstr "Campaigns"
 
-#: templates/base.html:40
+#: templates/base.html:52
 msgid "Курсы"
 msgstr "Courses"
 
-#: templates/base.html:41 templates/join.html:4 templates/join.html:14
+#: templates/base.html:53 templates/join.html:4 templates/join.html:14
 #: templates/join_error.html:4 templates/join_fail.html:4
 #: templates/join_success.html:4
 msgid "Вступить"
 msgstr "Join"
 
-#: templates/base.html:49
+#: templates/base.html:61
 msgid "Поиск"
 msgstr ""
 
@@ -208,9 +208,8 @@ msgstr ""
 
 #: templates/join_success.html:13
 msgid ""
-"Поздравляем, заявка успешно отправлена! Через какое-то время (будем "
-"надеяться, что недолгое) с вами через Telegram свяжутся представители "
-"Союза марксистов."
+"Поздравляем, заявка успешно отправлена! В течение недели через Telegram с"
+" тобой свяжутся представители Союза марксистов."
 msgstr ""
 
 #: templates/join_success.html:14
@@ -242,4 +241,11 @@ msgstr "All tags used by"
 
 #~ msgid "Переводы"
 #~ msgstr "Translations"
+
+#~ msgid ""
+#~ "Поздравляем, заявка успешно отправлена! Через"
+#~ " какое-то время (будем надеяться, что "
+#~ "недолгое) с вами через Telegram свяжутся"
+#~ " представители Союза марксистов."
+#~ msgstr ""
 
