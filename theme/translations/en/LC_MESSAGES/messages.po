@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-01 09:51+0200\n"
+"POT-Creation-Date: 2023-08-01 17:08+0200\n"
 "PO-Revision-Date: 2023-07-29 21:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -177,7 +177,7 @@ msgstr "Please note that at present we only accept Russian-speaking applicants."
 msgid "Не удалось отправить заявку на вступление в Союз марксистов..."
 msgstr ""
 
-#: templates/join_error.html:13
+#: templates/join_error.html:14
 msgid ""
 "По какой-то причине отправить вашу заявку в Союз марксистов не удалось. "
 "Скорее всего, это связано с внутренними проблемами в системах СМ, и "
@@ -185,20 +185,20 @@ msgid ""
 "форму снова через некоторое время."
 msgstr ""
 
-#: templates/join_error.html:14
+#: templates/join_error.html:15
 msgid "А пока можно вернуться на"
 msgstr ""
 
-#: templates/join_error.html:14
+#: templates/join_error.html:15
 #, fuzzy
 msgid "главную страницу"
 msgstr "Next page"
 
-#: templates/join_fail.html:13
+#: templates/join_fail.html:14
 msgid "Я не знаю, как, но тебе удалось заполнить форму неправильно."
 msgstr ""
 
-#: templates/join_fail.html:14
+#: templates/join_fail.html:15
 msgid "Попробуй еще раз"
 msgstr ""
 
@@ -206,21 +206,21 @@ msgstr ""
 msgid "Заявка на вступление в Союз марксистов успешно отправлена!"
 msgstr ""
 
-#: templates/join_success.html:13
+#: templates/join_success.html:14
 msgid ""
 "Поздравляем, заявка успешно отправлена! В течение недели через Telegram с"
 " тобой свяжутся представители Союза марксистов."
 msgstr ""
 
-#: templates/join_success.html:14
+#: templates/join_success.html:15
 msgid "А до тех пор настоятельно рекомендуем ознакомиться с"
 msgstr ""
 
-#: templates/join_success.html:14
+#: templates/join_success.html:15
 msgid "уставными документами организации"
 msgstr ""
 
-#: templates/join_success.html:14
+#: templates/join_success.html:15
 msgid "(это все равно придется сделать)"
 msgstr ""
 
