@@ -45,6 +45,18 @@ select.join-form-input {
     margin-top: 30px;
 }
 
+.join-form-message {
+    max-width: 750px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.join-form-message a {
+    color: var(--sm-red);
+}
+
 @media (max-width: 800px) {
     .join-form-wrapper h1 {
         width: 300px;
