@@ -39,6 +39,15 @@
     grid-gap: 1.5%;
 }
 
+.section-wrapper.error {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.section-wrapper.error h1 {
+    margin-bottom: 20px;
+}
+
 @media (min-width : 800px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
@@ -79,5 +88,9 @@
     .cards h3 {
         font-size: 1em;
         line-height: 1em;
+    }
+
+    .section-wrapper.error {
+        text-align: left;
     }
 }
