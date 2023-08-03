@@ -1,5 +1,6 @@
 title: Организационные принципы «Союза марксистов»
 slug: orgprinciples
+parent: documents
 lang: ru
 date: 2019-11-03
 modified: 2022-12-04

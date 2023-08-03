@@ -84,7 +84,6 @@ PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "i18n_subsites",
     "extract_toc",
-    "page_hierarchy",
     "cover_image",
     # "search"
 ]
@@ -98,6 +97,12 @@ JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 I18N_TEMPLATES_LANG = 'ru'
 # mapping: language_code -> settings_overrides_dict
 I18N_SUBSITES = {
+    # 'uk': {
+    #     'SITENAME': 'Союз марксистів',
+    #     'SITESUBTITLE': '',
+    #     'TIMEZONE': 'Europe/Kiev',
+    #     'OUTPUT_PATH': 'output/uk'
+    # },
     'en': {
         'SITENAME': 'Marxunion',
         'SITESUBTITLE': '',
@@ -109,7 +114,13 @@ I18N_SUBSITES = {
     #     'SITESUBTITLE': '',
     #     'TIMEZONE': 'Europe/Berlin',
     #     'OUTPUT_PATH': 'output/de'
-    # }
+    # },
+    # 'fr': {
+    #     'SITENAME': 'Union marxiste',
+    #     'SITESUBTITLE': '',
+    #     'TIMEZONE': 'Europe/Paris',
+    #     'OUTPUT_PATH': 'output/fr'
+    # },
 }
 
 MARKDOWN = {

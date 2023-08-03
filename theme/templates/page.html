@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% from 'macros.html' import parents with context %}
 
 {% block title %}
 {{ page.title|striptags|e }} {% if page.subtitle %} - {{ page.subtitle|striptags|e }} {% endif %} · {{ super() }}
@@ -22,9 +23,7 @@
   <li><a href="{{ SITEURL }}/" title="{{ SITENAME }}">
     <i class="fa fa-home fa-lg"></i>
   </a></li>
-  {% for parent in page.parents %}
-  <li><a href="{{ SITEURL }}/{{ parent.url }}">{{ parent.title }}</a></li>
-  {% endfor %}
+  {{ parents(page) }}
   <li class="active">{{ page.title }}</li>
 </ul>
 

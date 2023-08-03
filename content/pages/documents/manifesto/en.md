@@ -1,5 +1,6 @@
 title: Манифест «Союза марксистов»
 slug: manifesto
+parent: documents
 lang: en
 date: 2019-11-03
 modified: 2020-02-15
