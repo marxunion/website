@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-03 10:34+0200\n"
+"POT-Creation-Date: 2023-08-06 11:25+0200\n"
 "PO-Revision-Date: 2023-08-02 10:12+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -63,10 +63,6 @@ msgstr ""
 msgid "Опубликовано"
 msgstr ""
 
-#: templates/article.html:104
-msgid "Категория"
-msgstr ""
-
 #: templates/article.html:108
 msgid "Теги"
 msgstr ""
@@ -80,11 +76,13 @@ msgstr ""
 msgid "Документы"
 msgstr ""
 
-#: templates/base.html:51 templates/macros.html:15
+#: templates/base.html:51 templates/campaigns.html:5 templates/campaigns.html:9
+#: templates/campaigns.html:16 templates/macros.html:15
 msgid "Кампании"
 msgstr ""
 
-#: templates/base.html:52 templates/macros.html:17
+#: templates/base.html:52 templates/courses.html:5 templates/courses.html:16
+#: templates/macros.html:17
 msgid "Курсы"
 msgstr ""
 
@@ -106,6 +104,10 @@ msgstr ""
 #: templates/categories.html:8 templates/categories.html:16
 #: templates/categories.html:17
 msgid "Все категории в"
+msgstr ""
+
+#: templates/courses.html:9
+msgid "Курсы от"
 msgstr ""
 
 #: templates/documents.html:9
@@ -229,4 +231,7 @@ msgstr ""
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "Все теги, используемые в"
 msgstr ""
+
+#~ msgid "Категория"
+#~ msgstr ""
 

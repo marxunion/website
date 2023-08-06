@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import card with context %}
+
+{% block title %}
+{% trans %}Кампании{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Кампании{% endtrans %} {{ SITENAME|striptags|e }}
+{% endblock head_description %}
+
+{% block content %}
+<main class="section-wrapper">
+    <div class="section">
+        <div class="section-header-wrapper">
+            <div class="section-header">{% trans %}Кампании{% endtrans %}</div>
+            <div class="section-header-rectangle"></div>
+        </div>
+        <section class="cards">
+            {{ card(pages|get("manifesto")) }}
+            {{ card(pages|get("orgprinciples")) }}
+        </section>
+    </div>
+</main>
+{% endblock content %}

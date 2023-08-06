@@ -100,10 +100,10 @@
             {% set day = article.date.strftime('%d')|int %}
             <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
             {% endif %}
-            {% if article.category|trim|count > 0 %}
-            <h4>{% trans %}Категория{% endtrans %}</h4>
-            <a class="category-link" href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ category.slug }}-ref">{{ article.category }}</a>
-            {% endif %}
+            {# {% if article.category|trim|count > 0 %} #}
+            {# <h4>{% trans %}Категория{% endtrans %}</h4> #}
+            {# <a class="category-link" href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ category.slug }}-ref">{{ article.category }}</a> #}
+            {# {% endif %} #}
             {% if article.tags and article.tags[0]|trim|count > 0 %}
             <h4>{% trans %}Теги{% endtrans %}</h4>
             <ul class="list-of-tags tags-in-article">

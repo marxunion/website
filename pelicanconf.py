@@ -37,6 +37,8 @@ DIRECT_TEMPLATES = [
     "join_fail",
     "join_error",
     "documents",
+    "campaigns",
+    "courses",
     "tags",
     "categories",
     "archives",
@@ -46,16 +48,12 @@ DIRECT_TEMPLATES = [
 PAGINATED_TEMPLATES = {"index": 2}
 INDEX_SAVE_AS = 'index.html'
 OUTPUT_PATH = 'output'
+CATEGORY_SAVE_AS = ''
 
 PATH = "content"
 STATIC_PATHS = ['content/posts', 'content/pages']
 ARTICLE_PATHS = ['content/posts']
 PAGE_PATHS = ['content/pages']
-PATH_METADATA = 'pages/(?P<path>.*)\..*'
-
-PAGE_URL = '{slug}/'
-PAGE_SAVE_AS = '{slug}/index.html'
-SLUGIFY_SOURCE = 'basename'
 
 STATIC_EXCLUDES = ['plugins', 'theme', 'output']
 PAGE_EXCLUDES = STATIC_EXCLUDES
