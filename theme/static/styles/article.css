@@ -62,7 +62,7 @@ article ol {
     margin-left: 40px;
 }
 
-#article-sidebar h4:first-child {
+#article-sidebar h4 {
     display: none;
 }
 
@@ -126,6 +126,39 @@ article h5 {
     margin-top: 20px;
     font-size: 23px;
 }
+
+.list-of-tags li {
+    border-radius: 10px;
+    background-color: var(--sm-red);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.list-of-tags li a {
+    color: white;
+}
+
+ul.list-of-tags {
+    display: flex;
+    font-size: 16px;
+    margin-left: 0;
+}
+
+article tbody, article th, article tr, article td {
+    border: 1px solid var(--mobile-menu-border);
+}
+
+article td, article th {
+    padding: 5px;
+}
+
 
 @media (max-width: 800px) {
     article {
