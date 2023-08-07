@@ -153,14 +153,19 @@ ul.list-of-tags {
 
 article table {
     margin-top: 10px;
+    font-size: 20px;
 }
 
 article tbody, article th, article tr, article td {
-    border: 1px solid var(--mobile-menu-border);
+    border: 1px solid var(--table-border);
 }
 
 article td, article th {
     padding: 5px;
+}
+
+article th {
+    background-color: var(--th);
 }
 
 
