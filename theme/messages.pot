@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-07 19:19+0200\n"
+"POT-Creation-Date: 2023-08-08 11:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,32 +65,32 @@ msgstr ""
 msgid "Теги"
 msgstr ""
 
-#: templates/base.html:48 templates/index.html:33
+#: templates/base.html:49 templates/index.html:33
 msgid "Новости"
 msgstr ""
 
-#: templates/base.html:49 templates/documents.html:5
+#: templates/base.html:50 templates/documents.html:5
 #: templates/documents.html:16 templates/macros.html:13
 msgid "Документы"
 msgstr ""
 
-#: templates/base.html:51 templates/campaigns.html:5 templates/campaigns.html:9
+#: templates/base.html:52 templates/campaigns.html:5 templates/campaigns.html:9
 #: templates/campaigns.html:16 templates/macros.html:15
 msgid "Кампании"
 msgstr ""
 
-#: templates/base.html:52 templates/courses.html:5 templates/courses.html:16
+#: templates/base.html:53 templates/courses.html:5 templates/courses.html:16
 #: templates/macros.html:17
 msgid "Курсы"
 msgstr ""
 
-#: templates/base.html:53 templates/join.html:4 templates/join.html:14
+#: templates/base.html:54 templates/join.html:4 templates/join.html:14
 #: templates/join_error.html:4 templates/join_fail.html:4
 #: templates/join_success.html:4
 msgid "Вступить"
 msgstr ""
 
-#: templates/base.html:61
+#: templates/base.html:62
 msgid "Поиск"
 msgstr ""
 

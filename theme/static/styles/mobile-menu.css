@@ -1,3 +1,7 @@
+#mobile-menu-toggle {
+    display: none;
+}
+
 @media (max-width: 800px) {
     .menu {
         display: none; /* Скрываем список навигации по умолчанию */
@@ -12,10 +16,6 @@
         height: 100%;
     }
 
-    .menu.active {
-        display: flex; /* Показываем список навигации при активации "гамбургера" */
-    }
-
     nav ul {
         display: flex;
         flex-direction: column; /* Отображаем пункты меню в столбец */
@@ -28,10 +28,6 @@
         padding-bottom: 1.5em;
         border-bottom: 1px solid var(--mobile-menu-border);
         font-size: 1em;
-    }
-
-    .menu.active nav ul li a {
-        color: var(--black);
     }
 
     .menu-toggle .bar1 {
@@ -52,12 +48,6 @@
         height: 5px;
         background-color: var(--black);
         margin: 5px 0;
-    }
-
-    .menu.active {
-        width: 200px;
-        padding: 0;
-        z-index: 11;
     }
 
     nav {
@@ -85,7 +75,18 @@
         z-index: 10;
     }
 
-    .mobile-background.active {
+    #mobile-menu-toggle:checked + .menu {
+        width: 200px;
+        padding: 0;
+        z-index: 11;
+        display:flex;
+    }
+
+    #mobile-menu-toggle:checked + .menu nav ul li a {
+        color: var(--black);
+    }
+
+    #mobile-menu-toggle:checked + .menu + .mobile-background {
         display: block;
     }
 }
