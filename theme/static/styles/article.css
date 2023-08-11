@@ -139,6 +139,7 @@ article h5 {
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .list-of-tags li a {
@@ -149,6 +150,7 @@ ul.list-of-tags {
     display: flex;
     font-size: 16px;
     margin-left: 0;
+    flex-wrap: wrap;
 }
 
 article table {
