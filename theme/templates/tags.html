@@ -28,10 +28,7 @@
     <div class="section">
         <ul class="list-of-tags">
             {% for tag, articles in tags|sort %}
-            <li>
-            {% set num = articles|count %}
-            <a href="#{{ tag.slug }}-ref">{{ tag }}<span class="superscript">{{ num }}</span></a>
-            </li>
+            <li><a href="#{{ tag.slug }}-ref">{{ tag }}</a></li>
             {% endfor %}
         </ul>
         {% for tag, articles in tags|sort %}
