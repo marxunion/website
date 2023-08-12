@@ -15,6 +15,8 @@ AUTHOR = SITENAME
 SITEURL = ""
 DEFAULT_LANG = "ru"
 DEFAULT_DATE = "fs"
+TIMEZONE = "Europe/Moscow"
+LOCALE = "ru_RU"
 
 # Photo Gallery plugin
 # PHOTO_LIBRARY = "gallery-source/"
@@ -83,7 +85,7 @@ PLUGINS = [
     "i18n_subsites",
     "extract_toc",
     "cover_image",
-    # "search"
+    "search"
 ]
 
 JINJA_FILTERS = {
@@ -99,25 +101,29 @@ I18N_SUBSITES = {
     #     'SITENAME': 'Союз марксистів',
     #     'SITESUBTITLE': '',
     #     'TIMEZONE': 'Europe/Kiev',
-    #     'OUTPUT_PATH': 'output/uk'
+    #     'OUTPUT_PATH': 'output/uk',
+    #     'LOCALE': 'uk_UA'
     # },
     'en': {
         'SITENAME': 'Marxunion',
         'SITESUBTITLE': '',
         'TIMEZONE': 'Europe/London',
-        'OUTPUT_PATH': 'output/en'
+        'OUTPUT_PATH': 'output/en',
+        'LOCALE': 'en_US'
     },
     # 'de': {
     #     'SITENAME': 'Marxunion',
     #     'SITESUBTITLE': '',
     #     'TIMEZONE': 'Europe/Berlin',
-    #     'OUTPUT_PATH': 'output/de'
+    #     'OUTPUT_PATH': 'output/de',
+    #     'LOCALE': 'de_DE'
     # },
     # 'fr': {
     #     'SITENAME': 'Union marxiste',
     #     'SITESUBTITLE': '',
     #     'TIMEZONE': 'Europe/Paris',
-    #     'OUTPUT_PATH': 'output/fr'
+    #     'OUTPUT_PATH': 'output/fr',
+    #     'LOCALE': 'fr_FR'
     # },
 }
 

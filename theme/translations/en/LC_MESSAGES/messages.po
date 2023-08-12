@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-11 21:18+0200\n"
+"POT-Creation-Date: 2023-08-12 14:39+0200\n"
 "PO-Revision-Date: 2023-07-29 21:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -61,13 +61,9 @@ msgstr "Previous article"
 msgid "Следующая статья"
 msgstr "Next article"
 
-#: templates/article.html:99
+#: templates/article.html:100
 msgid "Опубликовано"
-msgstr "Published"
-
-#: templates/article.html:108
-msgid "Теги"
-msgstr "Tags"
+msgstr "Published on"
 
 #: templates/base.html:50 templates/index.html:33
 msgid "Новости"
@@ -96,7 +92,7 @@ msgstr "Join"
 
 #: templates/base.html:63
 msgid "Поиск"
-msgstr ""
+msgstr "Search"
 
 #: templates/categories.html:4 templates/categories.html:13
 #: templates/categories.html:14 templates/categories.html:33
@@ -229,36 +225,13 @@ msgstr ""
 
 #: templates/macros.html:3
 msgid "Переводы"
-msgstr ""
+msgstr "Translations"
 
 #: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14
-#, fuzzy
 msgid "Все теги"
-msgstr "All categories in"
+msgstr "All tags in"
 
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "Все теги, используемые в"
-msgstr ""
-
-#~ msgid "Следующая страница"
-#~ msgstr "Next page"
-
-#~ msgid "Переводы"
-#~ msgstr "Translations"
-
-#~ msgid ""
-#~ "Поздравляем, заявка успешно отправлена! Через"
-#~ " какое-то время (будем надеяться, что "
-#~ "недолгое) с вами через Telegram свяжутся"
-#~ " представители Союза марксистов."
-#~ msgstr ""
-
-#~ msgid "Категория"
-#~ msgstr "Category"
-
-#~ msgid "Все теги"
-#~ msgstr "All tags"
-
-#~ msgid "Все теги, используемые в"
-#~ msgstr "All tags used by"
+msgstr "All tags used in"
 

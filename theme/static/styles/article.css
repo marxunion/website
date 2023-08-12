@@ -62,10 +62,6 @@ article ol {
     margin-left: 40px;
 }
 
-#article-sidebar h4 {
-    display: none;
-}
-
 #article-sidebar time {
     font-style: italic;
     text-align: center;
@@ -206,4 +202,15 @@ article th {
     article nav ul {
         margin-top: 10px;
     }
+}
+
+blockquote {
+    background: var(--th);
+    border-left: 10px solid var(--sm-red);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    line-height: inherit;
+    font-size: inherit;
+    font-style: italic;
 }
