@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-12 14:39+0200\n"
+"POT-Creation-Date: 2023-08-13 15:10+0200\n"
 "PO-Revision-Date: 2023-08-02 10:12+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -227,16 +227,4 @@ msgstr ""
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "Все теги, используемые в"
 msgstr ""
-
-#~ msgid "Категория"
-#~ msgstr ""
-
-#~ msgid "Все теги"
-#~ msgstr ""
-
-#~ msgid "Все теги, используемые в"
-#~ msgstr ""
-
-#~ msgid "Теги"
-#~ msgstr ""
 

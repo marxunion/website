@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-    line-height: 1;
+    line-height: 1.11;
 }
 
 ol, ul {
@@ -89,7 +89,6 @@ ul.breadcrumb li a:hover {
 }
 
 /* Основной контент */
-
 
 h1 {
     font-weight: 700;

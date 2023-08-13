@@ -19,6 +19,10 @@
     border: 1px solid var(--sm-red);
 }
 
+.stork-progress {
+    display: none;
+}
+
 @media (max-width: 800px) {
     .stork-wrapper {
         width: 180px;

@@ -3,6 +3,8 @@ article {
     margin: 0 auto;
     margin-top: 40px;
     padding-bottom: 50px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 article header {
@@ -54,12 +56,18 @@ article ul {
     list-style: disc;
     font-size: 20px;
     margin-left: 40px;
+    margin-top: 10px;
 }
 
 article ol {
     list-style: decimal;
     font-size: 20px;
     margin-left: 40px;
+    margin-top: 10px;
+}
+
+.toc ul {
+    margin-top: 2px;
 }
 
 #article-sidebar time {
@@ -150,8 +158,9 @@ ul.list-of-tags {
 }
 
 article table {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 20px;
+    text-justify: none;
 }
 
 article tbody, article th, article tr, article td {
@@ -159,7 +168,7 @@ article tbody, article th, article tr, article td {
 }
 
 article td, article th {
-    padding: 5px;
+    padding: 7px 10px;
 }
 
 article th {
@@ -202,6 +211,10 @@ article th {
     article nav ul {
         margin-top: 10px;
     }
+
+    img.inline {
+        display: none;
+    }
 }
 
 blockquote {
@@ -213,4 +226,24 @@ blockquote {
     line-height: inherit;
     font-size: inherit;
     font-style: italic;
+}
+
+.admonition.important {
+    background-color: var(--th);
+    border-radius: 10px;
+    margin: 10px 0 1em 0;
+    min-height: 20px;
+    padding: 10px 10px 10px 36px;
+    position: relative;
+}
+
+.admonition-title {
+    font-weight: bold;
+}
+
+img.inline {
+    float: right;
+    width: 30%;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
