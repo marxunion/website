@@ -19,10 +19,6 @@
     line-height: 23.44px;
 }
 
-.card p {
-    font-style: italic;
-}
-
 .card p, time {
     font-weight: 400;
     font-size: 1em;

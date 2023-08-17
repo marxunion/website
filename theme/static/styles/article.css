@@ -3,8 +3,6 @@ article {
     margin: 0 auto;
     margin-top: 40px;
     padding-bottom: 50px;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 article header {
@@ -36,6 +34,8 @@ article h1 a {
 article p {
     font-size: 20px;
     margin-top: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .article-content p:not(:first-child) img {
@@ -160,7 +160,6 @@ ul.list-of-tags {
 article table {
     margin-top: 15px;
     font-size: 20px;
-    text-justify: none;
 }
 
 article tbody, article th, article tr, article td {

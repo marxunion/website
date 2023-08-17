@@ -8,3 +8,4 @@ TODOs before finalizing:
 
 - Reenable Stork
 - Remove the meta noindex tag
+- Change baseurl in publishconf.py

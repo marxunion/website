@@ -75,12 +75,11 @@ ul.breadcrumb li + li:before {
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-    color: var(--breadcrumd);
+    color: var(--sm-red);
 }
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-    color: var(--breadcrumd-hover);
     text-decoration: underline;
 }
 
