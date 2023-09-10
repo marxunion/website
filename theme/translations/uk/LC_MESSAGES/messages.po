@@ -7,13 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-17 10:05+0200\n"
-"PO-Revision-Date: 2023-08-02 10:12+0200\n"
+"POT-Creation-Date: 2023-08-13 18:19+0200\n"
+"PO-Revision-Date: 2023-07-29 21:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: uk\n"
-"Language-Team: uk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,154 +20,160 @@ msgstr ""
 
 #: templates/404.html:4
 msgid "Страница не найдена"
-msgstr ""
+msgstr "Сторінку на знайдено"
 
 #: templates/404.html:8
 msgid "Такой страницы не существует в"
-msgstr ""
+msgstr "Такої сторінки не існує в"
 
 #: templates/404.html:14
 msgid "Такой страницы не существует!"
-msgstr ""
+msgstr "Такої сторінки не існує!"
 
 #: templates/404.html:15
 msgid ""
 "Увы, запрашиваемая вами страница не найдена. Она либо никогда не "
 "существовала, либо была перенесена или удалена."
 msgstr ""
+"На жаль, запитувана вами сторінка не знайдена. Вона або ніколи не"
+"існувала, або була перенесена або видалена."
 
 #: templates/archives.html:4 templates/archives.html:13
 #: templates/archives.html:14 templates/archives.html:29
 msgid "Все статьи"
-msgstr ""
+msgstr "Усі статті"
 
 #: templates/archives.html:8 templates/archives.html:16
 #: templates/archives.html:17
 msgid "Все архивы"
-msgstr ""
+msgstr "Усі архіви"
 
 #: templates/article.html:44 templates/page.html:41
 msgid "Содержание"
-msgstr ""
+msgstr "Зміст"
 
 #: templates/article.html:81
 msgid "Предудущая статья"
-msgstr ""
+msgstr "Попередня стаття"
 
 #: templates/article.html:90
 msgid "Следующая статья"
-msgstr ""
+msgstr "Наступна стаття"
 
 #: templates/article.html:100
 msgid "Опубликовано"
-msgstr ""
+msgstr "Опубліковано"
 
 #: templates/base.html:50 templates/index.html:33
 msgid "Новости"
-msgstr ""
+msgstr "Новини"
 
 #: templates/base.html:51 templates/documents.html:5
 #: templates/documents.html:16 templates/macros.html:13
 msgid "Документы"
-msgstr ""
+msgstr "Документи"
 
 #: templates/base.html:53 templates/campaigns.html:5 templates/campaigns.html:9
 #: templates/campaigns.html:16 templates/macros.html:15
 msgid "Кампании"
-msgstr ""
+msgstr "Кампанії"
 
 #: templates/base.html:54 templates/courses.html:5 templates/courses.html:16
 #: templates/macros.html:17
 msgid "Курсы"
-msgstr ""
+msgstr "Курси"
 
 #: templates/base.html:55 templates/join.html:4 templates/join.html:14
 #: templates/join_error.html:4 templates/join_fail.html:4
 #: templates/join_success.html:4
 msgid "Вступить"
-msgstr ""
+msgstr "Долучитися"
 
 #: templates/base.html:63
 msgid "Поиск"
-msgstr ""
+msgstr "Пошук"
 
 #: templates/categories.html:4 templates/categories.html:13
 #: templates/categories.html:14 templates/categories.html:33
+#, fuzzy
 msgid "Все категории"
-msgstr ""
+msgstr "Усі категорії"
 
 #: templates/categories.html:8 templates/categories.html:16
 #: templates/categories.html:17
 msgid "Все категории в"
-msgstr ""
+msgstr "Усі категорії в"
 
 #: templates/courses.html:9
+#, fuzzy
 msgid "Курсы от"
-msgstr ""
+msgstr "Курси від"
 
 #: templates/documents.html:9
 msgid "Уставные документы"
-msgstr ""
+msgstr "Статутні документи"
 
 #: templates/index.html:75
+#, fuzzy
 msgid "Предыдущая"
-msgstr ""
+msgstr "Попередня"
 
 #: templates/index.html:88
+#, fuzzy
 msgid "Следующая"
-msgstr ""
+msgstr "Наступна"
 
 #: templates/join.html:8
 msgid "Заполните эту форму, чтобы присоединиться к Союзу марксистов!"
-msgstr ""
+msgstr "Заповніть цю форму, щоб долучитися до Союзу Марксистів!"
 
 #: templates/join.html:16
 msgid "Как нам к тебе обращаться?"
-msgstr ""
+msgstr "Як нам до тебе звертатися?"
 
 #: templates/join.html:18
 msgid "Гендер"
-msgstr ""
+msgstr "Гендер"
 
 #: templates/join.html:19
 msgid "Не указывать"
-msgstr ""
+msgstr "Не зазначати"
 
 #: templates/join.html:20
 msgid "Женский"
-msgstr ""
+msgstr "Жіночий"
 
 #: templates/join.html:21
 msgid "Мужской"
-msgstr ""
+msgstr "Чоловічий"
 
 #: templates/join.html:23
 msgid "Возраст"
-msgstr ""
+msgstr "Вік"
 
 #: templates/join.html:24
 msgid "Номер телефона"
-msgstr ""
+msgstr "Номер телефону"
 
 #: templates/join.html:25
 msgid "Имя в Telegram"
-msgstr ""
+msgstr "Ім'я в Telegram"
 
 #: templates/join.html:26
 msgid "Город (+ страна, если это не РФ)"
-msgstr ""
+msgstr "Місто (+ країна, якщо не в РФ)"
 
 #: templates/join.html:27
 msgid "Отправить"
-msgstr ""
+msgstr "Надіслати"
 
 #: templates/join.html:30
 msgid "В данный момент мы принимаем только русскоговорящих членов."
-msgstr ""
+msgstr "Наразі при приймаємо тільки російськомовних членів."
 
 #: templates/join_error.html:8 templates/join_fail.html:8
 msgid "Не удалось отправить заявку на вступление в Союз марксистов..."
-msgstr ""
+msgstr "Не вдалося надіслати заявку на вступ до Союзу марксистів..."
 
 #: templates/join_error.html:14
 msgid ""
@@ -176,55 +181,60 @@ msgid ""
 "Скорее всего, это связано с внутренними проблемами в системах СМ, и "
 "ответственные люди уже об этом знают. Пожалуйста, попробуйте заполнить "
 "форму снова через некоторое время."
-msgstr ""
+msgstr "За якоюсь причиною надіслати вашу заявку до Союзу марксистів не вдалось. "
+"Швидше за все, це повязано зі внутрішніми проблемами у системах СМ, й "
+"відповідальні люди про це вже знают. Будь ласка, спробуйте заповнити "
+"форму знову через деякий час."
 
 #: templates/join_error.html:15
 msgid "А пока можно вернуться на"
-msgstr ""
+msgstr "А поки є можливість повернутися на"
 
 #: templates/join_error.html:15
+#, fuzzy
 msgid "главную страницу"
-msgstr ""
+msgstr "головну сторінку"
 
 #: templates/join_fail.html:14
 msgid "Я не знаю, как, но тебе удалось заполнить форму неправильно."
-msgstr ""
+msgstr "Я не знаю, як, але тобі вдалося заповнити цю форму неправильно."
 
 #: templates/join_fail.html:15
 msgid "Попробуй еще раз"
-msgstr ""
+msgstr "Спробуй ще раз"
 
 #: templates/join_success.html:8
 msgid "Заявка на вступление в Союз марксистов успешно отправлена!"
-msgstr ""
+msgstr "Заява на вступ до Союзу марксистів успішно відправлена"
 
 #: templates/join_success.html:14
 msgid ""
 "Поздравляем, заявка успешно отправлена! В течение недели через Telegram с"
 " тобой свяжутся представители Союза марксистов."
-msgstr ""
+msgstr "Вітаю, заявка успішно відправлена! Протягом тижня через Telegram з"
+"  тобою з'єднаються представники Союзу маркисистів."
 
 #: templates/join_success.html:15
 msgid "А до тех пор настоятельно рекомендуем ознакомиться с"
-msgstr ""
+msgstr "А до тих пір наполегливо рекомендуємо ознайомитися зі"
 
 #: templates/join_success.html:15
 msgid "уставными документами организации"
-msgstr ""
+msgstr "статутними документами організації"
 
 #: templates/join_success.html:15
 msgid "(это все равно придется сделать)"
-msgstr ""
+msgstr "(це все одно потрібно буде зробити)"
 
 #: templates/macros.html:3
 msgid "Переводы"
-msgstr ""
+msgstr "Переклади"
 
 #: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14
 msgid "Все теги"
-msgstr ""
+msgstr "Усі теги"
 
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "Все теги, используемые в"
-msgstr ""
+msgstr "Усі теги, використані в"
 
