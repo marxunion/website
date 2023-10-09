@@ -1,5 +1,5 @@
 peru
-markdown<3.2
+markdown<3.6
 typogrify
 babel
 jinja2
