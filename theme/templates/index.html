@@ -60,9 +60,6 @@
         {% if articles_page.object_list|length > begin %}
         {% for article_object in articles_page.object_list[begin:] %}
             {{ card(article_object) }}
-            {{ card(article_object) }}
-            {{ card(article_object) }}
-            {{ card(article_object) }}
         {% endfor %}
         {% endif %}
         </section>
