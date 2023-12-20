@@ -47,7 +47,7 @@ DIRECT_TEMPLATES = [
     "404"
 ]
 
-PAGINATED_TEMPLATES = {"index": 2}
+PAGINATED_TEMPLATES = {"index": 8}
 INDEX_SAVE_AS = 'index.html'
 OUTPUT_PATH = 'output'
 CATEGORY_SAVE_AS = ''
