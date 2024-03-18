@@ -43,10 +43,12 @@
         </nav>
     </div>
     <div class="span8 article-content">
-    {% else %}
+    {% elif page.cover %}
     <div class="span8 offset2 article-content">
         <img alt="" class="inline" src="{{ page.cover }}">
-        {% endif %}
+    {% else %}
+    <div class="span8 article-content">
+    {% endif %}
         {{ page.content }}
     </div>
 </div>
